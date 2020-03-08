@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ayushkumarshah/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -137,8 +137,6 @@ if [ -f '/Users/ayushkumarshah/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 if [ -f '/Users/ayushkumarshah/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ayushkumarshah/google-cloud-sdk/completion.zsh.inc'; fi
 
 # export PATH=/usr/bin/python3:$PATH
-
-# export PATH=/Users/ayushkumarshah/Library/Python/3.7/bin:$PATH
 
 alias python="python3"
 alias pip="pip3"
