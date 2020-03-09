@@ -22,6 +22,7 @@ process_option() {
       break;;
     'apps')
       source scripts/apps.sh
+      break;;
     'brew')
       brew bundle
       break;;
