@@ -4,28 +4,37 @@ chsh -s $(which zsh)
 ```
 ## Logout and login, then run setup.sh
 ```
-ln -svf ~/Desktop/dotfiles-mac/setup.sh ~
+git clone https://github.com/ayushkumarshah/dotfiles-mac.git
+cd dotfiles-mac
 chmod +x setup.sh
 ./setup.sh
 ```
 
-## Repeated steps
-[Add ssh key to github](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+You will see a list of options:
 
-## Mac
-* [Homebrew](https://brew.sh/)
-  ```
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  ```
-* VS Code-Issue
 ```
-brew cask install visual-studio-code
+******************
+    Setup OS X
+******************
+
+Available commands:
+
+      all:  Install everything
+     apps:  Install useful apps
+     brew:  Install packages & applications from Brewfile
+   config:  Link dotfiles
+ defaults:  Default settings for mac
+      ssh:  Create & copy SSH key
+   system:  Install system software like brew and ohmyzsh
+
+        q:  Quit/Exit.
 ```
-Right click and open
-* Gunicorn 
-  ```
-  pip install gunicorn
-  ```
+
+Use the command you want. Example, if you want to install everything:
+```
+./setup.sh all
+```
+
 * Set shortcut key for terminal
   1. Open Applications > automator
   2. Quick Action
@@ -40,8 +49,7 @@ Right click and open
 # Softwares
 
 ## General
-* Chrome
-* [Spotify](http://www.spotify.com/download?_ga=2.119251337.1285576053.1579697598-1908647167.1579697598)
+
 * Latex 
   * Full - Recommended (Tex maker included in mac)
   
