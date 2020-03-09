@@ -14,17 +14,11 @@ link_dotfile() {
   link_to $(pwd)/$1 ~/$1
 }
 
-# Install ohmyzsh
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-
-# Install plugins for ohmyzsh
-brew install autojump # Mac
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
 # Link config files
 link_dotfile .zshrc
 link_dotfile .bash_profile
 link_dotfile .gitconfig
 link_dotfile .tmux.conf
 link_dotfile .vimrc
+link_dotfile .Brewfile
+
