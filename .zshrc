@@ -140,3 +140,5 @@ if [ -f '/Users/ayushkumarshah/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 
 alias python="python3"
 alias pip="pip3"
+
+export LC_ALL=en_US.UTF-8
