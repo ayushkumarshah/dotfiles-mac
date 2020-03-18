@@ -69,10 +69,10 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-git
-autojump
-zsh-syntax-highlighting
-zsh-autosuggestions
+  git
+  autojump
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
@@ -108,7 +108,7 @@ alias gcloudusesql="./cloud_sql_proxy -instances=ssftp-220720:us-east1:ss-data-s
 alias gcloudusesql_int="./cloud_sql_proxy -instances=ssftp-220720:us-east1:ss-dbs-production=tcp:5432"
 alias gcloudssh="gcloud beta compute --project "ssftp-220720" ssh --zone "us-east4-c" "ss-ml-alpha""
 # CHANGING THE USERNAME IN TERMINAL
-prompt_context(){ 
+prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)ayush"
   fi
@@ -116,19 +116,18 @@ prompt_context(){
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/ayushkumarshah/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/ayushkumarshah/miniconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
+  eval "$__conda_setup"
 else
-    if [ -f "/Users/ayushkumarshah/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/ayushkumarshah/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/ayushkumarshah/miniconda3/bin:$PATH"
-    fi
+  if [ -f "/Users/ayushkumarshah/miniconda3/etc/profile.d/conda.sh" ]; then
+    . "/Users/ayushkumarshah/miniconda3/etc/profile.d/conda.sh"
+  else
+    export PATH="/Users/ayushkumarshah/miniconda3/bin:$PATH"
+  fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ayushkumarshah/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ayushkumarshah/google-cloud-sdk/path.zsh.inc'; fi
