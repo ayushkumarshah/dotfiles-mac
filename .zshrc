@@ -138,6 +138,11 @@ if [ -f '/Users/ayushkumarshah/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 # export PATH=/usr/bin/python3:$PATH
 
 alias python="python3"
-alias pip="pip3"
+# alias pip="pip3"
 
 export LC_ALL=en_US.UTF-8
+
+export NVM_DIR="/Users/ayushkumarshah/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export HOMEBREW_BUNDLE_FILE=~/.Brewfile
