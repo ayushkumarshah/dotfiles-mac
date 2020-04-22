@@ -6,46 +6,57 @@
 # USAGE
 # ./setup.sh [OPTION]
 
-
 # OPTIONS
 
 process_option() {
   case $1 in
-    'all')
-      source scripts/defaults.sh
-      source scripts/system.sh
-      source scripts/config.sh
-      brew bundle
-      bundle install
-      source scripts/apps.sh
-      source scripts/ssh.sh
-      break;;
-    'apps')
-      source scripts/apps.sh
-      break;;
-    'brew')
-      brew bundle
-      break;;
-    'config')
-      source scripts/config.sh
-      break;;
-    'defaults')
-      source scripts/defaults.sh
-      break;;
-    'ssh')
-      source scripts/ssh.sh
-      break;;
-    'system')
-      source scripts/system.sh
-      break;;
-      
-    'q')
-      break;;
-    *)
-      break;;
+  'all')
+    source scripts/config.sh
+    source scripts/ohmyzsh.sh
+    source scripts/link.sh
+    brew bundle
+    bundle install
+    source scripts/apps.sh
+    source scripts/ssh.sh
+    break
+    ;;
+  'apps')
+    source scripts/apps.sh
+    break
+    ;;
+  'brewapps')
+    brew bundle
+    bundle install
+    break
+    ;;
+  'config')
+    source scripts/config.sh
+    break
+    ;;
+  'link')
+    source scripts/link.sh
+    break
+    ;;
+  'homebrew')
+    source scripts/ssh.sh
+    break
+    ;;
+  'ohmyzsh')
+    source scripts/ohmyzsh.sh
+    break
+    ;;
+  'ssh')
+    source scripts/ssh.sh
+    break
+    ;;
+  'q')
+    break
+    ;;
+  *)
+    break
+    ;;
   esac
 }
-
 
 # MENU
 while true; do
@@ -57,13 +68,14 @@ while true; do
     echo ""
     echo "Available commands:"
     echo ""
-    echo "      all:  Install everything"
+    echo "      all:  Complete setup of mac"
     echo "     apps:  Install useful apps"
-    echo "     brew:  Install packages & applications from Brewfile"
-    echo "   config:  Link dotfiles"
-    echo " defaults:  Default settings for mac"
+    echo " brewapps:  Install packages & applications from Brewfile"
+    echo "   config:  Default settings for mac"
+    echo "     link:  Link dotfiles to home"
+    echo " homebrew:  Install homebrew installer"
+    echo "  ohmyzsh:  Install ohmyzsh"
     echo "      ssh:  Create & copy SSH key"
-    echo "   system:  Install system software like brew and ohmyzsh"
     echo ""
     echo "        q:  Quit/Exit."
     echo ""
