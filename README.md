@@ -57,7 +57,7 @@ Let me explain these commands so that you can execute the one you want. There ar
 inside the scripts folder and setup.sh which
 you can view and edit according to your need.
 
-- --all:-- It executes all the commands in the order: ``config - ohmyzsh - link - brewapps - apps - ssh``
+- **all:** It executes all the commands in the order: ``config - ohmyzsh - link - brewapps - apps - ssh``
 
   ```console
   $ ./setup.sh all
@@ -66,7 +66,7 @@ you can view and edit according to your need.
 
 > If you run this command, you don't need to run the commands below.
 
-- --config:-- It changes different settings of mac for easy usage like use list view in all Finder windows by default,
+- **config:** It changes different settings of mac for easy usage like use list view in all Finder windows by default,
   Trackpad: enable tap to click, etc. You can view the complete configurations in `scripts/config.sh` and edit it as you
   like or comment unwanted settings.
 
@@ -74,21 +74,21 @@ you can view and edit according to your need.
   $ ./setup.sh config
   ```
 
-- --ohmyzsh:-- Install ohmyzsh which makes your zsh terminal more powerful and enables features like autocompletion, syntax
+- **ohmyzsh:** Install ohmyzsh which makes your zsh terminal more powerful and enables features like autocompletion, syntax
   highlighting, displaying github branches, etc. 
 
   ```console
   $ ./setup.sh ohmyzsh
   ```
 
-- --link-- Link all the necessary dotfiles (configurations) to your home directory. Make sure you perform this as it is
+- **link** Link all the necessary dotfiles (configurations) to your home directory. Make sure you perform this as it is
     necessary for other apps as well.
 
   ```console
   $ ./setup.sh link
   ```
 
-- --brewapps:-- Install some basic useful apps like `Iterm2 terminal, VSCode, VLC, Spotify, Slack, etc` from the file .Brewfile. You can open
+- **brewapps:** Install some basic useful apps like `Iterm2 terminal, VSCode, VLC, Spotify, Slack, etc` from the file .Brewfile. You can open
   anedit the .Brewfile so that only the apps you require are installed. You may add more apps or remove the apps present
   in the file. While adding apps in the Brewfile, you should know whether the app is found in brew or cask. You can use
   Brewfile to track the apps installed in your system and may update this file automatically so that you can reuse this
@@ -102,21 +102,21 @@ you can view and edit according to your need.
 
   After this step, use Iterm2 terminal instead of the normal terminal.
 
-- --apps:-- Install apps which are not present in the default brew or cask packages. You can view and edit the file
+- **apps:** Install apps which are not present in the default brew or cask packages. You can view and edit the file
   `scripts/app.sh` as per your need.
 
   ```console
   $ ./setup.sh apps
   ```
 
-- --homebrew:-- It installs the default homebrew installer along with git and zsh. You don't need to install this as you
+- **homebrew:** It installs the default homebrew installer along with git and zsh. You don't need to install this as you
   have already done at the beginning.
 
   ```console
   $ ./setup.sh homebrew
   ```
 
-- --ssh:-- It creates a SSH key for your gihub and copies it in the clipboard ready to paste in the github account.
+- **ssh:** It creates a SSH key for your gihub and copies it in the clipboard ready to paste in the github account.
 
   ```console
   $ ./setup.sh ssh
