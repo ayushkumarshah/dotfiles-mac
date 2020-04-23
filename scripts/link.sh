@@ -21,4 +21,4 @@ link_dotfile .gitconfig
 link_dotfile .tmux.conf
 link_dotfile .vimrc
 link_dotfile .Brewfile
-link_to $(pwd)/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+link_dotfile com.googlecode.iterm2.plist

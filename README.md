@@ -64,7 +64,15 @@ you can view and edit according to your need.
   $ ./setup.sh link
   ```
 
-> If you run this command, you don't need to run the commands below.
+  **Load Iterm2 configurations:**
+
+    Open Iterm2, goto Preferences > General > Preferences > Tick the both boxes and change username to your own. i.e.
+    `/Users/ayushkumarshah to /Users/yourusername`
+
+
+```
+If you chose the all option and run the above commands, you don't need to run the setup.sh commands given below.
+```
 
 - **config:** It changes different settings of mac for easy usage like use list view in all Finder windows by default,
   Trackpad: enable tap to click, etc. You can view the complete configurations in `scripts/config.sh` and edit it as you
@@ -101,6 +109,11 @@ you can view and edit according to your need.
   ```
 
   After this step, use Iterm2 terminal instead of the normal terminal.
+
+  **Load Iterm2 configurations:**
+
+  Open Iterm2, goto Preferences > General > Preferences > Tick the both boxes and change username to your own. i.e.
+  `/Users/ayushkumarshah to /Users/yourusername`
 
 - **apps:** Install apps which are not present in the default brew or cask packages. You can view and edit the file
   `scripts/app.sh` as per your need.
