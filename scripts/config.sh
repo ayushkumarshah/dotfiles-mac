@@ -114,3 +114,7 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 # Screen shot default location
 defaults write com.apple.screencapture location Users/ayushkumarshah/Pictures/Screenshots
+
+# Increase keyboard key repeat rate
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1         # normal minimum is 2 (30 ms)
