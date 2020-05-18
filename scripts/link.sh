@@ -22,3 +22,4 @@ link_dotfile .tmux.conf
 link_dotfile .vimrc
 link_dotfile .Brewfile
 link_dotfile com.googlecode.iterm2.plist
+ln -svf $(pwd)/.config/ ~
