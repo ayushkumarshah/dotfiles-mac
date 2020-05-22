@@ -14,5 +14,25 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
+    
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    Plug 'joshdick/onedark.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
-call plug#end()
+    " Comment shortcut plugin
+    Plug 'tpope/vim-commentary'
+    
+    Plug 'junegunn/rainbow_parentheses.vim'    
+    
+    " Git Plugins
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+    Plug 'APZelos/blamer.nvim'
+
+    call plug#end()
