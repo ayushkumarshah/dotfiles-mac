@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-json": ">=1.2.6",
+    "coc-markdownlint": ">=1.4.0",
+    "coc-python": ">=1.2.12",
+    "coc-snippets": ">=2.1.26",
+    "coc-vimlsp": ">=0.8.0"
+  }
+}

@@ -1,0 +1,4 @@
+python.createTerminal
+python.setInterpreter
+python.upgradePythonLanguageServer
+python.setLinter
