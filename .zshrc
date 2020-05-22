@@ -5,9 +5,9 @@
 [ -f $HOME/.config/zsh/ohmyzsh.zsh ] && source $HOME/.config/zsh/ohmyzsh.zsh
 [ -f $HOME/.config/zsh/google_cloud.zsh ] && source $HOME/.config/zsh/google_cloud.zsh
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
-# [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
 
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
