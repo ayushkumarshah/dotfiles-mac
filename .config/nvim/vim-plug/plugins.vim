@@ -34,5 +34,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     Plug 'APZelos/blamer.nvim'
+    
+    " Project Management
+    Plug 'mhinz/vim-startify'
+    Plug 'liuchengxu/vim-which-key'
+    " Ranger
+    Plug 'francoiscabrol/ranger.vim'
+    Plug 'rbgrouleff/bclose.vim'
 
     call plug#end()
+
+
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
