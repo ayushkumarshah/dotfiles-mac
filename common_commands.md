@@ -96,13 +96,28 @@ gg move to the beginning of the file.
 
 ### nvim plugin commands:
 
-```console
+```vim
 :bd -> remove buffer
 :CtrlP -> find file
 <C-e> -> Sidebar
 <C-o> -> Toggle between buffers
 space+d -> goto definitions
 space+g -> goto ASSIGNMENTS
+
+" Git
+:Git diff
+:Gdiffsplit
+:GBrowse
+:GV
+
+:vsplit
+
+" coc-python
+gd > Definitions
+gr > References
+Shift K > doc hint
+:Format > autopep8 formatting
+
 <C-w>w -> Switch cursors between sidebar and code
 <C-n><C-n><C-n> -> multiple cursors:
     c -> change
@@ -119,11 +134,41 @@ space+g -> goto ASSIGNMENTS
 > - Tab
 gf > open file directly from path written in vim
 
+" Coc
+:CocInstall coc-python
+:CocUninstall
+:CocList extensions , Tab
+:CocCommand
+
+" Startify
+:SSave
+:SLoad
+
+" I hate escape more than anything else
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+" Easy CAPS
+inoremap <c-u> <ESC>viwUi
+nnoremap <c-u> viwU<Esc>
+
+" Alternate way to save
+nnoremap <C-s> :w<CR>
+" Alternate way to quit
+nnoremap <C-Q> :wq!<CR>
+" Use control-c instead of escape
+nnoremap <C-c> <Esc>
+
+" Better window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" vim commentary
+nnoremap <space>/ :Commentary<CR>
+vnoremap <space>/ :Commentary<CR>
 ```
-
-
-
-
 
 **Open server in nautilus / file explorer**
 

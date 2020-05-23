@@ -28,7 +28,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "edc4a9afc8afd5c36eb6f394ba040b631fc34c738bbd8647758da975a898b3edea2bd9a2937e29f2f05c3351c64d7f77d13c14b291d4a418a4376df27f709d87"
       },
-      "expiry": 1590167548715
+      "expiry": 1590254059557
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -53,7 +53,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "35caf59ca8b8bdcd894e2be6a3ce95cbdfc8313daafb32635924f1d0b53ed1563c3037f530c5ebfd3ea865cd6f6181a620e1e19131e87543ef92bb6c50b16732"
       },
-      "expiry": 1590167548693
+      "expiry": 1590254059558
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -78,7 +78,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "ade14c0d0e8596b7f09a33c68f2dbd8ceacf9e274c7dfb208f6783999bd3c6050b22de41a8e2f4d72ee1a1cd8b6f6be2a482d8e957d1e3e165ab21b3f913b76e"
       },
-      "expiry": 1590167548728
+      "expiry": 1590254059601
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -103,7 +103,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "2dfd793710156c17c0905fc8e0a81600e7f8a8c244eb0b8336689bdbd0855aa3fc995f3f96194f44bb4e22f8b28a792603742d5459e35c67d12890e3417d292d"
       },
-      "expiry": 1590167548740
+      "expiry": 1590254059600
     },
     "/Users/ayushkumarshah/miniconda3/bin/python.v3": {
       "data": {
@@ -128,7 +128,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3",
         "fileHash": "d43b63e0a7332d46cbbfd79e42a0b1a7b9986bb017589f7882ddd864ce86648e8df14fc320fa44d6852b41d2ad3783388cc6d4b153e76bcdadb459a3cdb776bc"
       },
-      "expiry": 1590167548723
+      "expiry": 1590254059611
     },
     "/usr/bin/python2.7.v3": {
       "data": {
@@ -153,7 +153,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "7d95f5cbddc8953f756f0c11f58ba312e0f9bb0a0c95ad7bb46307aca357a3bb3f0bba9fb2a40afa85b729008b12b4c16d0f04cc78acec9f957a45e7c758cdbd"
       },
-      "expiry": 1590167548745
+      "expiry": 1590254059595
     },
     "/usr/local/opt/python/bin/python3.7.v3": {
       "data": {
@@ -178,7 +178,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb"
       },
-      "expiry": 1590167548768
+      "expiry": 1590254059615
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.v3": {
       "data": {
@@ -203,7 +203,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "0be569bb1602946eec817f1dc10a9c1b9096088802ad999259adc445a72e475c958b7f607d3b76720ce43e136c9729f7f5aafacb2af09ee42c9a04af8f875a5f"
       },
-      "expiry": 1590167548777
+      "expiry": 1590254059614
     },
     "/Users/ayushkumarshah/miniconda3/envs/style-transfer/bin/python.v3": {
       "data": {
@@ -228,7 +228,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/style-transfer",
         "fileHash": "17684dc09674251553e87cf8c2030f239e892cffaa6c32c449df9b1be2a9c1b8620d9c216336fea273e491f6534cbb3cbd452684348951946a736bf47e814a00"
       },
-      "expiry": 1590167548773
+      "expiry": 1590254059617
     },
     "/usr/bin/python3.v3": {
       "data": {
@@ -253,9 +253,78 @@
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
         "fileHash": "3322aaf6a2e03b1f72361a42a593b6460859fd4afb14e0aa12c424e29ff7df3593600c64457796299143ebeacee8839518dd7f859debb6365f04f7c18a6dfbb0"
       },
-      "expiry": 1590167548775
+      "expiry": 1590254061150
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "6be85ed2c71195782f281b34f77333531d50df42a8b0afadde4110f5036c813bec2796c2fa1430d641dd8f626e4a6a329a946fda42ad5f75ec62fb43d5c8913a",
+        "type": "Unknown"
+      },
       {
         "architecture": 3,
         "path": "/usr/local/bin/python3",
@@ -536,7 +605,7 @@
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
         "architecture": 3,
-        "path": "/usr/local/opt/python/bin/python3.7",
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
@@ -553,13 +622,13 @@
           "build": [],
           "version": "3.7.7-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "6be85ed2c71195782f281b34f77333531d50df42a8b0afadde4110f5036c813bec2796c2fa1430d641dd8f626e4a6a329a946fda42ad5f75ec62fb43d5c8913a",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/usr/local/opt/python/bin/python3.7",
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
         "version": {
           "options": {
             "loose": false,
@@ -576,8 +645,8 @@
           "build": [],
           "version": "3.7.7-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
         "type": "Unknown"
       },
       {
@@ -605,54 +674,54 @@
       },
       {
         "architecture": 3,
-        "path": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "2.7.16-final",
-          "major": 2,
+          "raw": "3.7.7-final",
+          "major": 3,
           "minor": 7,
-          "patch": 16,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "2.7.16-final"
+          "version": "3.7.7-final"
         },
-        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
-        "fileHash": "0be569bb1602946eec817f1dc10a9c1b9096088802ad999259adc445a72e475c958b7f607d3b76720ce43e136c9729f7f5aafacb2af09ee42c9a04af8f875a5f",
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/ayushkumarshah/miniconda3/envs/tf/bin/python",
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
         "version": {
           "options": {
             "loose": false,
             "includePrerelease": false
           },
           "loose": false,
-          "raw": "3.6.10-final",
+          "raw": "3.7.7-final",
           "major": 3,
-          "minor": 6,
-          "patch": 10,
+          "minor": 7,
+          "patch": 7,
           "prerelease": [
             "final"
           ],
           "build": [],
-          "version": "3.6.10-final"
+          "version": "3.7.7-final"
         },
-        "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/tf",
-        "fileHash": "14b2b43719fbf3da1849f1a13edd446896112984bdc43bbaa96eb85ba04faeb0585ba5162ad8afb9d0fb0486b4b5f0183135821ce0e802f4d645a8fde18b31e6",
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
         "type": "Unknown"
       }
     ],
     "InterpreterAutoSeletionRule-currentPath": {
       "architecture": 3,
-      "path": "/usr/local/opt/python/bin/python3.7",
+      "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
       "version": {
         "options": {
           "loose": false,
@@ -669,8 +738,8 @@
         "build": [],
         "version": "3.7.7-final"
       },
-      "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
-      "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
+      "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+      "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
       "type": "Unknown"
     },
     "preferredGlobalPyInterpreter": {
@@ -724,7 +793,7 @@
           "displayName": "Python 3.7.7 64-bit"
         }
       },
-      "expiry": 1590171081435
+      "expiry": 1590257563971
     },
     "/Users/ayushkumarshah/miniconda3/envs/tf/bin/python.v3": {
       "data": {
@@ -749,14 +818,14 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/tf",
         "fileHash": "14b2b43719fbf3da1849f1a13edd446896112984bdc43bbaa96eb85ba04faeb0585ba5162ad8afb9d0fb0486b4b5f0183135821ce0e802f4d645a8fde18b31e6"
       },
-      "expiry": 1590167548839
+      "expiry": 1590254059474
     },
     "/usr/local/opt/python/bin/python3.7.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.7 64-bit",
         "hash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb-929db5ea168baaace0abb6154cdb68f5"
       },
-      "expiry": 1590171081420
+      "expiry": 1590257563951
     },
     "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python.v3": {
       "data": {
@@ -781,7 +850,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi",
         "fileHash": "0f2e6e89a355dc23c98398c1cfb29927f6f6fa984e75147a69a71a651dccffa0f12d2edac544f4c37ee1dc0e91519f5dd84cf978ae61d0245fe8a79b7d536a72"
       },
-      "expiry": 1590167548853
+      "expiry": 1590254059643
     },
     "CONDA_ENVIRONMENTS": {
       "data": [
@@ -1047,60 +1116,60 @@
         "displayName": "Python 3.7.7 64-bit ('base': conda)",
         "hash": "d43b63e0a7332d46cbbfd79e42a0b1a7b9986bb017589f7882ddd864ce86648e8df14fc320fa44d6852b41d2ad3783388cc6d4b153e76bcdadb459a3cdb776bc-7f7c2424bec5804b72666aa49a779bfb"
       },
-      "expiry": 1590167549868
+      "expiry": 1590254151647
     },
     "/Users/ayushkumarshah/miniconda3/envs/style-transfer/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.7 64-bit ('style-transfer': conda)",
         "hash": "17684dc09674251553e87cf8c2030f239e892cffaa6c32c449df9b1be2a9c1b8620d9c216336fea273e491f6534cbb3cbd452684348951946a736bf47e814a00-e0401f51ea2851e689363e70105124ea"
       },
-      "expiry": 1590167549869
+      "expiry": 1590254151648
     },
     "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.6.10 64-bit ('conda-delphi': conda)",
         "hash": "0f2e6e89a355dc23c98398c1cfb29927f6f6fa984e75147a69a71a651dccffa0f12d2edac544f4c37ee1dc0e91519f5dd84cf978ae61d0245fe8a79b7d536a72-ba577f62d50a1f7ec9a4982cbf3bc6db"
       },
-      "expiry": 1590167549870
+      "expiry": 1590254151649
     },
     "/Users/ayushkumarshah/miniconda3/envs/tf/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.6.10 64-bit ('tf': conda)",
         "hash": "14b2b43719fbf3da1849f1a13edd446896112984bdc43bbaa96eb85ba04faeb0585ba5162ad8afb9d0fb0486b4b5f0183135821ce0e802f4d645a8fde18b31e6-c06d73c9820b0fe37c34c86224e231fc"
       },
-      "expiry": 1590167549870
+      "expiry": 1590254151650
     },
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "ade14c0d0e8596b7f09a33c68f2dbd8ceacf9e274c7dfb208f6783999bd3c6050b22de41a8e2f4d72ee1a1cd8b6f6be2a482d8e957d1e3e165ab21b3f913b76e-9294d20f49a323df514ea964d2a11e21"
       },
-      "expiry": 1590167549871
+      "expiry": 1590254120703
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.7 64-bit",
         "hash": "35caf59ca8b8bdcd894e2be6a3ce95cbdfc8313daafb32635924f1d0b53ed1563c3037f530c5ebfd3ea865cd6f6181a620e1e19131e87543ef92bb6c50b16732-bed8a27fcdbca5f02bfb8e1b4e9a6e7f"
       },
-      "expiry": 1590167549872
+      "expiry": 1590254120709
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.3 64-bit",
         "hash": "3322aaf6a2e03b1f72361a42a593b6460859fd4afb14e0aa12c424e29ff7df3593600c64457796299143ebeacee8839518dd7f859debb6365f04f7c18a6dfbb0-c5ba3a255804cf930c6f7865498dcdfa"
       },
-      "expiry": 1590167549873
+      "expiry": 1590254120705
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "0be569bb1602946eec817f1dc10a9c1b9096088802ad999259adc445a72e475c958b7f607d3b76720ce43e136c9729f7f5aafacb2af09ee42c9a04af8f875a5f-c8f63601cbb58de49bfd1f8ab0b8cdaf"
       },
-      "expiry": 1590167549874
+      "expiry": 1590254059633
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
-      "path": "/usr/local/opt/python/bin/python3.7",
+      "path": "/usr/local/bin/python3",
       "version": {
         "options": {
           "loose": false,
@@ -1118,7 +1187,7 @@
         "version": "3.7.7-final"
       },
       "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
-      "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
+      "fileHash": "35caf59ca8b8bdcd894e2be6a3ce95cbdfc8313daafb32635924f1d0b53ed1563c3037f530c5ebfd3ea865cd6f6181a620e1e19131e87543ef92bb6c50b16732",
       "type": "Unknown",
       "displayName": "Python 3.7.7 64-bit"
     },
@@ -1153,7 +1222,7 @@
           "displayName": "Python 3.7.7 64-bit ('base': conda)"
         }
       },
-      "expiry": 1590167549909
+      "expiry": 1590254151662
     },
     "/Users/ayushkumarshah/miniconda3/envs/style-transfer/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1186,7 +1255,7 @@
           "displayName": "Python 3.7.7 64-bit ('style-transfer': conda)"
         }
       },
-      "expiry": 1590167549911
+      "expiry": 1590254151664
     },
     "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1219,7 +1288,7 @@
           "displayName": "Python 3.6.10 64-bit ('conda-delphi': conda)"
         }
       },
-      "expiry": 1590167549913
+      "expiry": 1590254151666
     },
     "/Users/ayushkumarshah/miniconda3/envs/tf/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1252,7 +1321,7 @@
           "displayName": "Python 3.6.10 64-bit ('tf': conda)"
         }
       },
-      "expiry": 1590167549915
+      "expiry": 1590254151668
     },
     "/usr/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1282,7 +1351,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1590167549918
+      "expiry": 1590254120721
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -1312,7 +1381,7 @@
           "displayName": "Python 3.7.7 64-bit"
         }
       },
-      "expiry": 1590167549920
+      "expiry": 1590254120726
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -1342,7 +1411,7 @@
           "displayName": "Python 3.7.3 64-bit"
         }
       },
-      "expiry": 1590167549922
+      "expiry": 1590254120723
     },
     "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python.interpreter.Details.v7": {
       "data": {
@@ -1372,7 +1441,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1590167549924
+      "expiry": 1590254059640
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
       "architecture": 3,
@@ -1396,6 +1465,7 @@
       "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
       "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
       "type": "Unknown",
+      "cachedEntry": true,
       "displayName": "Python 3.7.7 64-bit"
     },
     "ProposeLSBanner": false,
@@ -1422,7 +1492,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/tf",
         "fileHash": "2274c1c8acb1622fb99234f883c2b4315f1213a16195512d794f871c0e6cd07b7083ae4e32476025ec11e182232c9c6fc66dc1fe4c37d5b679f28c1896225d68"
       },
-      "expiry": 1590174490068
+      "expiry": 1590261205289
     },
     "/Users/ayushkumarshah/miniconda3/envs/tf/bin/python3.v3": {
       "data": {
@@ -1447,7 +1517,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/tf",
         "fileHash": "a1d52201f45a7fb73506df857801d6407338b777ce0301368a6111c80c4e0c78e68497aca178e612b993a23a23b84a91712c049cc39290446eaf7efec142c371"
       },
-      "expiry": 1590174490067
+      "expiry": 1590261205287
     },
     "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python3.v3": {
       "data": {
@@ -1472,7 +1542,7 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi",
         "fileHash": "431a32ee75d77b39a3e620d8ec560710d3cdd382e9ba69d70354351cd0cf9b566ff4b1ea5e2bf3f8635d049f6e8b7b9a242ec94b8387b081ff305ad7f9ca6db9"
       },
-      "expiry": 1590174753197
+      "expiry": 1590261515288
     },
     "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python3.6.v3": {
       "data": {
@@ -1497,9 +1567,196 @@
         "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi",
         "fileHash": "3b536e2983e3da7416a12bb65605063d73300a7ad11308414ef02b0e401d166f4c4844e902e56f74b308b8d0e3e178c7b56921c55657ac559095b3e174e12d0a"
       },
-      "expiry": 1590174753198
+      "expiry": 1590261515286
     },
-    "SelectedPythonPath": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python"
+    "SelectedPythonPath": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python",
+    "/Users/ayushkumarshah/.config/coc/python_coc.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "a24c6ed1d8f1ae3665d317d35587f6410809b2af3d3c7564abfe26e25b3798e5b1d46a76b1bd88aeda67ea146906ad2427ca0d0fae82a46546bd1c0649fcf77f"
+      },
+      "expiry": 1590258900553
+    },
+    "/Users/ayushkumarshah/.config/coc/python_coc.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/.config/coc/python_coc",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.10-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.10-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi",
+        "fileHash": "a24c6ed1d8f1ae3665d317d35587f6410809b2af3d3c7564abfe26e25b3798e5b1d46a76b1bd88aeda67ea146906ad2427ca0d0fae82a46546bd1c0649fcf77f"
+      },
+      "expiry": 1590258900634
+    },
+    "/Users/ayushkumarshah/.config/coc/python_coc.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.10 64-bit",
+        "hash": "a24c6ed1d8f1ae3665d317d35587f6410809b2af3d3c7564abfe26e25b3798e5b1d46a76b1bd88aeda67ea146906ad2427ca0d0fae82a46546bd1c0649fcf77f-1150503cb56f35767a516fc74326eece"
+      },
+      "expiry": 1590258900632
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e"
+      },
+      "expiry": 1590307090072
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3"
+      },
+      "expiry": 1590307090052
+    },
+    "InterpreterAutoSeletionRule-environment": {
+      "architecture": 3,
+      "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.7-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 7,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.7-final"
+      },
+      "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+      "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
+      "type": "VirtualEnv"
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "6be85ed2c71195782f281b34f77333531d50df42a8b0afadde4110f5036c813bec2796c2fa1430d641dd8f626e4a6a329a946fda42ad5f75ec62fb43d5c8913a"
+      },
+      "expiry": 1590307090051
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e"
+      },
+      "expiry": 1590307090033
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.7 64-bit ('.venv': venv)",
+        "hash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3-5a8dd471b5c350d732f0ab29c54fd230"
+      },
+      "expiry": 1590307090083
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.7-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 7,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.7-final"
+          },
+          "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+          "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
+          "envName": ".venv",
+          "type": "Venv",
+          "displayName": "Python 3.7.7 64-bit ('.venv': venv)"
+        }
+      },
+      "expiry": 1590307090094
+    },
+    "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.7 64-bit ('.venv': venv)",
+        "hash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e-141cf386a1ba9a5ff5c7266d5bfbfb8f"
+      },
+      "expiry": 1590307090097
+    }
   },
   "coc-python|/Users/ayushkumarshah/Desktop/Fusemachines/projects/Smarter Sorting/chemical-delphi": {
     "INTERPRETERS_CACHE_v3_PipEnvService:94ceeb2409ab4efc6be24a00e5a1fe0a": [],
@@ -1559,7 +1816,9 @@
     },
     "INTERPRETERS_CACHE_v3_PipEnvService": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
-    "SelectedPythonPath": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python"
+    "SelectedPythonPath": "/usr/local/bin/python3",
+    "INTERPRETERS_CACHE_v3_PipEnvService:294dc682573ba03a255f56e3ef4213c0": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:294dc682573ba03a255f56e3ef4213c0": []
   },
   "coc-python|/Users/ayushkumarshah/Desktop/KUCE/Guitar-Chords-recognition": {
     "INTERPRETERS_CACHE_v3_PipEnvService:6b0f036ccda286cbbcf877d70fa28c3c": [],
@@ -1594,5 +1853,213 @@
   "coc-python|/Users/ayushkumarshah": {
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
     "INTERPRETERS_CACHE_v3_PipEnvService": []
+  },
+  "coc-python|/Users/ayushkumarshah/Desktop/dotfiles-mac": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:294dc682573ba03a255f56e3ef4213c0": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:294dc682573ba03a255f56e3ef4213c0": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:9a99aa2f879583ef5d4898d18d9a2167": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9a99aa2f879583ef5d4898d18d9a2167": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/ayushkumarshah/Desktop/dotfiles-mac": {
+      "architecture": 3,
+      "path": "/usr/local/opt/python/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.7-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 7,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.7-final"
+      },
+      "sysPrefix": "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7",
+      "fileHash": "158df62a0af50586d507d3ffbbfd292b516fa7c41e2a459bb750713cd8a7d110b5e64d31a70b362fe5afac305fca3289f44c699312ada6f2758406b66401cadb",
+      "type": "Unknown"
+    },
+    "SelectedPythonPath": "/Users/ayushkumarshah/miniconda3/envs/conda-delphi/bin/python"
+  },
+  "coc-python|/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:a5391db01e1e5c30746ac9e379d30099": [],
+    "SelectedPythonPath": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:a5391db01e1e5c30746ac9e379d30099": [
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
+        "envName": ".venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
+        "envName": ".venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "6be85ed2c71195782f281b34f77333531d50df42a8b0afadde4110f5036c813bec2796c2fa1430d641dd8f626e4a6a329a946fda42ad5f75ec62fb43d5c8913a",
+        "envName": ".venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io": {
+      "architecture": 3,
+      "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.7-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 7,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.7-final"
+      },
+      "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+      "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "864360c227fd8c4b975c13e37f54cc74dfc106835ea008bc1ecd41cf163e52be76df02978b1a1b33c620493d31a141bb54c950c102dae3de35ca48359fe7faa3",
+        "envName": ".venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "c53edfcf822bd8086f632460fe156c65a0c4be1254c555da7aa42757becb59df4e2ad32166869383a57a5eaacdd37ced6cc34034016bbf8ed38654f55dc6ca7e",
+        "envName": ".venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.7-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 7,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.7-final"
+        },
+        "sysPrefix": "/Users/ayushkumarshah/Desktop/Fusemachines/Blog_writing/ayushkumarshah.github.io/.venv",
+        "fileHash": "6be85ed2c71195782f281b34f77333531d50df42a8b0afadde4110f5036c813bec2796c2fa1430d641dd8f626e4a6a329a946fda42ad5f75ec62fb43d5c8913a",
+        "envName": ".venv",
+        "type": "Venv"
+      }
+    ]
   }
 }

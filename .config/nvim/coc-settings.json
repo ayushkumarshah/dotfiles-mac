@@ -12,7 +12,9 @@
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "python.jediEnabled": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/miniconda3/bin/black",
+  "python.jediEnabled": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
