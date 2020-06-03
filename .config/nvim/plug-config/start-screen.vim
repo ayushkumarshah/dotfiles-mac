@@ -39,6 +39,7 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ {'b': '~/Desktop/Blog_writing/ayushkumarshah.github.io'},
             \ {'d': '~/Desktop/dotfiles-mac'},
+            \ {'n': '~/Desktop/notes/wiki/index.md'},
             \ ]
 
 let g:startify_enable_special = 0
