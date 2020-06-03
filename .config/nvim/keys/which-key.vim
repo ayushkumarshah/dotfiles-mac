@@ -168,15 +168,15 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=popup --height=7'        , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
       \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
+      \ 'p' : [':FloatermNew python3'                            , 'python'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ ';' : [':FloatermToggle'                                , 'toggle'],
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ }

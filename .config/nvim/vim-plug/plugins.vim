@@ -50,6 +50,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/mathjax-support-for-mkdp'
     Plug 'iamcco/markdown-preview.vim'
     " Plug 'vimwiki/vimwiki'
+    Plug 'voldikss/vim-floaterm'
+    Plug 'ChristianChiarulli/codi.vim'
     call plug#end()
 
 
