@@ -29,10 +29,12 @@ let g:which_key_map['.'] = [ ':e $MYVIMRC'                , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                  , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
 let g:which_key_map[','] = [ 'Startify'                   , 'start screen' ]
+let g:which_key_map['c'] = [ ':Codi!!'                    , 'virtual repl']
 let g:which_key_map['d'] = [ ':bd'                        , 'delete buffer']
-" let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
+let g:which_key_map['p'] = [ ':MarkdownPreview'           , 'markdown-preview']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
@@ -41,12 +43,18 @@ let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['W'] = [ 'w'                          , 'write' ]
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
+" Group mappings
+
 " a is for actions
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
+      \ 'c' : [':ColorizerToggle'        , 'colorizer'],
+      \ 'e' : [':CocCommand explorer'    , 'explorer'],
       \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ 's' : [':let @/ = ""'            , 'remove search highlight'],
+      \ 't' : [':FloatermToggle'         , 'terminal'],
+      \ 'v' : [':Vista!!'                , 'tag viewer'],
       \ }
 
 " b is for buffer
@@ -157,5 +165,40 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
+" t is for terminal
+let g:which_key_map.t = {
+      \ 'name' : '+terminal' ,
+      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
+      \ 'n' : [':FloatermNew node'                              , 'node'],
+      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
+      \ 'p' : [':FloatermNew python'                            , 'python'],
+      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
+      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ }
+
+let g:which_key_map.w = {
+      \ 'name' : '+wiki' ,
+      \ 'w' : ['<Plug>VimwikiIndex'                             , 'index page'],
+      \ 'n' : ['<plug>(wiki-open)'                              , 'new'],
+      \ 'j' : ['<plug>(wiki-journal)'                           , 'journal'],
+      \ 'R' : ['<plug>(wiki-reload)'                            , 'reload'],
+      \ 'c' : ['<plug>(wiki-code-run)'                          , 'code run'],
+      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'              , 'backlinks'],
+      \ 'g' : ['<plug>(wiki-graph-in)'                          , 'graph in'],
+      \ 'G' : ['<plug>(wiki-graph-out)'                         , 'graph out'],
+      \ 'l' : ['<plug>(wiki-link-toggle)'                       , 'wiki link toggle'],
+      \ 'd' : ['<plug>(wiki-page-delete)'                       , 'delete wiki page'],
+      \ 'r' : ['<plug>(wiki-page-rename)'                       , 'rename wiki page'],
+      \ 't' : ['<plug>(wiki-page-toc)'                          , 'toc'],
+      \ 'T' : ['<plug>(wiki-page-toc-local)'                    , 'toc-local'],
+      \ 'e' : ['<plug>(wiki-export)'                            , 'export'],
+      \ 'u' : ['<plug>(wiki-list-uniq)'                         , 'unique wiki list'],
+      \ 'U' : ['<plug>(wiki-list-uniq-local)'                   , 'unique wiki list local'],
+      \ }
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
