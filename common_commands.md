@@ -53,7 +53,7 @@ Ctrl+D (exit)
 <prefix> 1: Switch to window 1
 <prefix> x: Kill current window
 <prefix> d: Detach tmux (exit back to normal terminal)
-<prefix> z, the active pane is toggled between zoomed and unzoomed 
+<prefix> z, the active pane is toggled between zoomed and unzoomed
 ```
 
 ## Vim
@@ -94,7 +94,7 @@ gg move to the beginning of the file.
 :wq
 ```
 
-### nvim plugin commands:
+### nvim plugin commands
 
 ```vim
 :bd -> remove buffer
@@ -113,26 +113,28 @@ space+g -> goto ASSIGNMENTS
 :vsplit
 
 " coc-python
-gd > Definitions
-gr > References
+gd > Goto Definitions
+gr > Goto References
+<C-o> - Go back
+
 Shift K > doc hint
 :Format > autopep8 formatting
 
 <C-w>w -> Switch cursors between sidebar and code
 <C-n><C-n><C-n> -> multiple cursors:
     c -> change
-    I -> Insert at first 
-    A -> Insert at end 
+    I -> Insert at first
+    A -> Insert at end
 
 :FZF
 :Rg > Find word inside file
 :BLines > Find all occurences of word in a giant file
 :Lines > Same as above but search in all buffers
 :History: > HOstory of commands ran in vim
-:Ag > similar to Rg but 
+:Ag > similar to Rg but
 :Buffers > Search through buffers
 > - Tab
-gf > open file directly from path written in vim
+gf > Goto file: open file directly from path written in vim
 
 " Coc
 :CocInstall coc-python
@@ -140,7 +142,10 @@ gf > open file directly from path written in vim
 :CocList extensions , Tab
 :CocCommand
 
-" Startify
+" Coc Explorer
+o - expand/collapse
+
+Startify
 :SSave
 :SLoad
 
@@ -214,13 +219,14 @@ git checkout filename -> Undo local changes to latest commit
 git reset --hard commit_id (reset to the particular commit. It will destroy any local modifications.)
 ```
 
-### Alternatively, if there's work to keep:
+### Alternatively, if there's work to keep
 
 ```console
 git stash
 git reset --hard commit_id
 git stash pop
 ```
+
 > This saves the modifications, then reapplies that patch after resetting. You could get merge conflicts, if you've modified things which were changed since the commit you reset to.
 
 ### Undo published commits with new commits
@@ -240,7 +246,7 @@ git revert HEAD~2..HEAD
 > Similarly, you can revert a range of commits using commit hashes:
 
 ```console
-git revert a867b4af..0766c053 
+git revert a867b4af..0766c053
 ```
 
 > Reverting a merge commit
@@ -250,8 +256,7 @@ git revert -m 1 <merge_commit_sha>
 ```
 
 > To get just one, you could use `rebase -i` to squash them afterwards Or, you
-> could do it manually (be sure to do this at top level of the repo) 
-
+> could do it manually (be sure to do this at top level of the repo)
 > get your index and work tree into the desired state, without changing HEAD:
 
 ```console
@@ -276,7 +281,7 @@ git reset does know five "modes": soft, mixed, hard, merge and keep. I will star
     git reset --soft HEAD~1
     ```
 
-     you will remove the last commit from the current branch, but the file changes 
+     you will remove the last commit from the current branch, but the file changes
     will stay in your working tree. Also the changes will stay on your index, so following with a git commit will create a commit with the exact same changes as the commit you "removed" before.
 
 - mixed
@@ -304,7 +309,6 @@ git reset does know five "modes": soft, mixed, hard, merge and keep. I will star
 
 - Bonus (keep)
 
-
     ```console
     git reset --keep HEAD~1
     ```
@@ -321,7 +325,6 @@ git rm --cached -> file removed from the index (staging it for deletion on the n
 ```
 
 ## Brew bundle (Mac)
-
 
 ### Requirements
 
@@ -478,3 +481,4 @@ Tests can be run with `bundle install && bundle exec rspec`.
 ## Copyright
 
 Copyright (c) Homebrew maintainers and Andrew Nesbitt. See [LICENSE](https://github.com/Homebrew/homebrew-bundle/blob/master/LICENSE) for details.
+
