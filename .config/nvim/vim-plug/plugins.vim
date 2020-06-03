@@ -41,7 +41,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Ranger
     Plug 'francoiscabrol/ranger.vim'
     Plug 'rbgrouleff/bclose.vim'
-
+    " devicons for nerdtree
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'honza/vim-snippets'
+    " Colorizer for css
+    Plug 'norcalli/nvim-colorizer.lua'
+    " Markdown preview in browser
+    Plug 'iamcco/mathjax-support-for-mkdp'
+    Plug 'iamcco/markdown-preview.vim'
+    " Plug 'vimwiki/vimwiki'
     call plug#end()
 
 
