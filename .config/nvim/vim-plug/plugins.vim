@@ -52,6 +52,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'vimwiki/vimwiki'
     Plug 'voldikss/vim-floaterm'
     Plug 'ChristianChiarulli/codi.vim'
+    " Alternative to vimwiki
+    " Plug 'fcpg/vim-waikiki'
     call plug#end()
 
 

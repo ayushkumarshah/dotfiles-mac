@@ -13,7 +13,8 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
 source $HOME/.config/nvim/plug-config/markdown-preview.vim
-source $HOME/.config/nvim/plug-config/vim-wiki.vim
+" source $HOME/.config/nvim/plug-config/vim-wiki.vim
+" source $HOME/.config/nvim/plug-config/waikiki.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " lua require'plug-colorizer'
 source $HOME/.config/nvim/themes/airline.vim
