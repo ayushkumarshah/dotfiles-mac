@@ -213,6 +213,14 @@ git reset <file> -> remove file from the current index (the "about to be committ
 git checkout filename -> Undo local changes to latest commit
 ```
 
+### Ignore files that have already been committed to the repo
+
+```console
+$ git rm -r --cached .
+$ git add .
+$ git commit -m "Clean up ignored files"
+```
+
 ### Hard delete unpublished commits
 
 ```console
