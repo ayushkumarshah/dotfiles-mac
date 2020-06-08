@@ -1,9 +1,0 @@
-explorer
-markdownlint.fixAll
-snippets.openSnippetFiles
-python.createTerminal
-python.execInTerminal
-python.enableLinting
-python.setLinter
-python.setInterpreter
-python.upgradePythonLanguageServer
