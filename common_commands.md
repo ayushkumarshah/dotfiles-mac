@@ -54,6 +54,10 @@ Ctrl+D (exit)
 <prefix> x: Kill current window
 <prefix> d: Detach tmux (exit back to normal terminal)
 <prefix> z, the active pane is toggled between zoomed and unzoomed
+
+<prefix> <c-S>: save current state
+<prefix> <c-R>: reload saved state
+
 ```
 
 ## Vim
@@ -66,7 +70,8 @@ p paste text after the current line.
 P paste text on the current line.
 
 y yank text into the copy buffer.
-d -> cut
+d -> delete
+<C-x> cut
 
 "+p paste from system
 "+y copy into system

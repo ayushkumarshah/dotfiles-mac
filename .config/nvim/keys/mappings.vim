@@ -67,4 +67,13 @@ else
   nnoremap <silent> <M-k>    :resize +2<CR>
   nnoremap <silent> <M-h>    :vertical resize -2<CR>
   nnoremap <silent> <M-l>    :vertical resize +2<CR>
+  
+  " Delete instead of cut
+  nnoremap d "_d
+  xnoremap d "_d
+  xnoremap p "_dP
+
+  nnoremap <C-x> d
+  xnoremap <C-x> d
+
 endif
