@@ -4,3 +4,5 @@
 .config/ranger/plugins/ranger_devicons
 .config/tmux
 .config/coc/*
+.config/configstore
+.config/nvim/session
