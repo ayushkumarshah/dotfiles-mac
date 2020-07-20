@@ -66,6 +66,15 @@ Ctrl+D (exit)
 d starts the delete operation.
 dw will delete a word.
 
+c starts the delete operation.
+cw will delete a word and change to insert mode.
+
+a Insert after cursor
+diw, di(, di' interactive deletes ( can be used with other commands as well )
+
+f/F find character
+t/T find character and place cursor before character
+
 p paste text after the current line.
 P paste text on the current line.
 
