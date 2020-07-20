@@ -92,12 +92,7 @@ you can view and edit according to your need.
 
 ## (If you want to install step by step)
 
-```
-If you chose the all option and run the above commands, you don't need to run the setup.sh commands given below.
-```
-
-
-
+> If you chose the all option and run the above commands, you don't need to run the setup.sh commands given below.
 
 - **config:** It changes different settings of mac for easy usage like use list view in all Finder windows by default,
   Trackpad: enable tap to click, etc. You can view the complete configurations in `scripts/config.sh` and edit it as you
@@ -165,16 +160,6 @@ If you chose the all option and run the above commands, you don't need to run th
 ### Configure iTerm2
 #### Set shortcut key for terminal (iTerm2)
 
-  > 1. Open Applications > automator
-  > 2. Quick Action
-  > 3. Launch application
-  > 4. Select iterm
-  > 5. Save and give name (eg Launch iterm)
-  > 6. Open keboard shortcuts > Service
-  > 7. Select the name in step 5 (Launch iterm)
-  > 8. Add shortcut > (Press the keys (Command plus .)
-  > 9. Restart
-
 ![Imgur](https://i.imgur.com/k1qid6x.png)
 
 1. Launch iTerm2
@@ -193,49 +178,35 @@ If you chose the all option and run the above commands, you don't need to run th
 - Go to colours, load presets and select Solarized. Make sure that the minimum contrast slider is set to low
 - Click on text, make sure that “Draw bold text in bright colours” is disabled
 
-
-
 #### Add shortcut key for iterm2 hotkey window
 
 - Goto preferences(Command + comma) > Profile > Keys > Hotkey > Create a dedicated hotkkey
 
-
-
-#### oh-my-zsh plugins
-
-- Autojump 
-
-  ```console
-  $ brew install autojump # Mac
-  ```
-  
-- Auto suggestion
-
-  ```console
-  $ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-  ```
-
-- Syntax highlighting
-
-  ```console
-  $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-  ```
-
-  Add this to array of plugin ~/.zshrc
-
-  ```console
-  plugin
-  (git
-  autojump
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  )
-  ```
-
-  ```console
-  $ source ~/.zshrc
-  ```
 ### Other Softwares
+
+- [Foxit PDF Reader](https://www.foxitsoftware.com/pdf-reader/)
+- Todoist
+
+- Pycharm Community Edition
+  
+  ```console
+  $ brew cask install pycharm-ce
+  ```
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+  
+  ```console
+  $ wget -P ~/Downloads 'https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh'
+  $ bash ~/Downloads/Miniconda3*.sh
+  ```
+- AWS CLI
+
+  ```console
+  $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  $ unzip awscli-bundle.zip
+  $ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+  ```
+
+- [Gcloud](https://cloud.google.com/sdk/install#installation_options)
 
 - Latex 
   - Full - Recommended (Tex maker included in mac)
@@ -249,31 +220,3 @@ If you chose the all option and run the above commands, you don't need to run th
     ```console
     $ brew cask install basictex
     ```
-
-- [Foxit PDF Reader](https://www.foxitsoftware.com/pdf-reader/)
-- Todoist
-
-- Pycharm
-- [Anaconda](https://www.anaconda.com/distribution/#download-section) OR
-- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-  After installation, run this command in terminal
-
-  ```console
-  $ conda config --set auto_activate_base False
-  ```
-
-- [Zoom](https://zoom.us/download)
-- Slack
-- [Postman](https://www.getpostman.com/downloads/)
-- [VS Code](https://code.visualstudio.com/download)
-- [Dbeaver](https://dbeaver.io/download/)
-- AWS
-
-  ```console
-  $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-  $ unzip awscli-bundle.zip
-  $ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-  ```
-
-- [Gcloud](https://cloud.google.com/sdk/install#installation_options)
-
