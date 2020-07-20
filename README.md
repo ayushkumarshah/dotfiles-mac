@@ -25,12 +25,13 @@ $ chsh -s $(which zsh)
 ## (Optional) Install iTerm2 terminal (Recommended)
 
 ```console
-brew cask install iterm2
+$ brew cask install iterm2
 ```
 
 ## 3. Logout and login, then run setup.sh
 
-Make sure you are inside the dotfiles-mac directory. Then run
+Open iTerm2 terminal if you installed, otherwise open default
+terminal. cd into the dotfiles-mac directory. Then run
 
 ```console
 $ ./setup.sh
