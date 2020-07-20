@@ -38,7 +38,7 @@ process_option() {
     break
     ;;
   'homebrew')
-    source scripts/ssh.sh
+    source scripts/homebrew.sh
     break
     ;;
   'ohmyzsh')

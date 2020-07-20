@@ -64,6 +64,8 @@ Let me explain these commands so that you can execute the one you want. There ar
 inside the scripts folder and setup.sh which
 you can view and edit according to your need.
 
+## If you want to install complete script
+
 - **all:** It executes all the commands in the order: ``config - ohmyzsh - link - brewapps - apps - ssh``
 
   ```console
@@ -76,10 +78,26 @@ you can view and edit according to your need.
     Open Iterm2, goto Preferences > General > Preferences > Tick the both boxes and change username to your own. i.e.
     `/Users/ayushkumarshah to /Users/yourusername`
 
+- Fix username to display your name
+
+  Modify ayush to your name at the end of ~/.config/zsh/ohmyzsh.zsh
+
+  ```console
+  prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)ayush"
+  fi
+  }
+  ```
+
+## (If you want to install step by step)
 
 ```
 If you chose the all option and run the above commands, you don't need to run the setup.sh commands given below.
 ```
+
+
+
 
 - **config:** It changes different settings of mac for easy usage like use list view in all Finder windows by default,
   Trackpad: enable tap to click, etc. You can view the complete configurations in `scripts/config.sh` and edit it as you
@@ -144,18 +162,79 @@ If you chose the all option and run the above commands, you don't need to run th
 
 ## 4. Other useful tips and tricks:
 
-### Set shortcut key for terminal
+### Configure iTerm2
+#### Set shortcut key for terminal (iTerm2)
 
-  1. Open Applications > automator
-  2. Quick Action
-  3. Launch application
-  4. Select iterm
-  5. Save and give name (eg Launch iterm)
-  6. Open keboard shortcuts > Service
-  7. Select the name in step 5 (Launch iterm)
-  8. Add shortcut > (Press the keys (Command plus .)
-  9. Restart
+  > 1. Open Applications > automator
+  > 2. Quick Action
+  > 3. Launch application
+  > 4. Select iterm
+  > 5. Save and give name (eg Launch iterm)
+  > 6. Open keboard shortcuts > Service
+  > 7. Select the name in step 5 (Launch iterm)
+  > 8. Add shortcut > (Press the keys (Command plus .)
+  > 9. Restart
 
+![Imgur](https://i.imgur.com/k1qid6x.png)
+
+1. Launch iTerm2
+2. Open Preferences by iTerm2->Preferences or Command plus comma(,)
+3. Select Profiles Tab
+4. Select Default > General tab.
+5. Choose a shortcut key
+
+#### Change theme for perfect display with ohmyzsh agnoster theme
+
+[**Solarized Color for iterm2**](https://michaelheap.com/solarized-with-iterm2/)
+
+- Download [Solarized](http://ethanschoonover.com/solarized)
+- Unzip it and double click on the colour scheme you want (light or dark)
+- Open iTerm2’s preferences.
+- Go to colours, load presets and select Solarized. Make sure that the minimum contrast slider is set to low
+- Click on text, make sure that “Draw bold text in bright colours” is disabled
+
+
+
+#### Add shortcut key for iterm2 hotkey window
+
+- Goto preferences(Command + comma) > Profile > Keys > Hotkey > Create a dedicated hotkkey
+
+
+
+#### oh-my-zsh plugins
+
+- Autojump 
+
+  ```console
+  $ brew install autojump # Mac
+  ```
+  
+- Auto suggestion
+
+  ```console
+  $ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  ```
+
+- Syntax highlighting
+
+  ```console
+  $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ```
+
+  Add this to array of plugin ~/.zshrc
+
+  ```console
+  plugin
+  (git
+  autojump
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  )
+  ```
+
+  ```console
+  $ source ~/.zshrc
+  ```
 ### Other Softwares
 
 - Latex 
@@ -198,68 +277,3 @@ If you chose the all option and run the above commands, you don't need to run th
 
 - [Gcloud](https://cloud.google.com/sdk/install#installation_options)
 
-### Terminal, zsh and ohmyzsh
-
-If you have already run setup.sh, then you don't need to install iterm2 again and don't need to configure zsh and ohmyzsh
-
-#### iTerm for MAC
-
-- [iterm2](https://iterm2.com/downloads/stable/latest)
-- Add hotkey for iterm 
-    - Goto preferences(Command + comma) > Profile > Keys > Hotkey > Create a dedicated hotkkey
-- [Solarized Color for iterm2](https://michaelheap.com/solarized-with-iterm2/)
-
-- [Jazz up zsh](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)
-- Install ohmyzsh
-
-  ```console
-  $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-  ```
-
-  Change theme in ~/.zshrc to agnoster
-
-- Changing username to display only name  
-   Add this at the end of ~/.zshrc
-
-  ```console
-  prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-  }
-  ```
-
-#### oh-my-zsh plugins
-
-- Autojump 
-
-  ```console
-  $ brew install autojump # Mac
-  ```
-  
-- Auto suggestion
-
-  ```console
-  $ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-  ```
-
-- Syntax highlighting
-
-  ```console
-  $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-  ```
-
-  Add this to array of plugin ~/.zshrc
-
-  ```console
-  plugin
-  (git
-  autojump
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  )
-  ```
-
-  ```console
-  $ source ~/.zshrc
-  ```
