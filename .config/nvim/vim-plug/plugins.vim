@@ -25,7 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Comment shortcut plugin
     Plug 'tpope/vim-commentary'
-    
+    Plug 'tpope/vim-surround'
     Plug 'junegunn/rainbow_parentheses.vim'    
     
     " Git Plugins
@@ -54,6 +54,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ChristianChiarulli/codi.vim'
     " Alternative to vimwiki
     " Plug 'fcpg/vim-waikiki'
+    " Plug 'zxqfl/tabnine-vim'
     call plug#end()
 
 

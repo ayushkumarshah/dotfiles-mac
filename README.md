@@ -22,6 +22,12 @@ Change default from bash to zsh
 $ chsh -s $(which zsh)
 ```
 
+## (Optional) Install iTerm2 terminal (Recommended)
+
+```console
+brew cask install iterm2
+```
+
 ## 3. Logout and login, then run setup.sh
 
 Make sure you are inside the dotfiles-mac directory. Then run
@@ -192,6 +198,8 @@ If you chose the all option and run the above commands, you don't need to run th
 - [Gcloud](https://cloud.google.com/sdk/install#installation_options)
 
 ### Terminal, zsh and ohmyzsh
+
+If you have already run setup.sh, then you don't need to install iterm2 again and don't need to configure zsh and ohmyzsh
 
 #### iTerm for MAC
 
