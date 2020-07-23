@@ -63,6 +63,9 @@ Ctrl+D (exit)
 ## Vim
 
 ```console
+w word by word
+W word by word (ignores bracket)
+
 d starts the delete operation.
 dw will delete a word.
 
