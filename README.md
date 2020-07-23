@@ -173,6 +173,8 @@ you can view and edit according to your need.
 
 #### Change theme for perfect display with ohmyzsh agnoster theme
 
+![Imgur](https://i.imgur.com/p40TkLz.png)
+
 [**Solarized Color for iterm2**](https://michaelheap.com/solarized-with-iterm2/)
 
 - Download [Solarized](http://ethanschoonover.com/solarized)
@@ -190,6 +192,8 @@ you can view and edit according to your need.
 - Choose FiraCode font that you installed
 
 #### Create a hotkey window for iTerm2 (Sliding terminal)
+
+![Imgur](https://i.imgur.com/yPnFm20.png)
 
 - Open iTerm's Preferences
 - Select Keys > Hotkey > Create a Dedicated Hotkey Window 
