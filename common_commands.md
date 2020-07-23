@@ -109,6 +109,20 @@ gg move to the beginning of the file.
 :q
 :q!
 :wq
+
+In Normal mode: 
+ZZ - save and quit
+ZQ - force quit without saving
+
+### Surround
+ds" - delete "surrounding"
+cs"' - change surrounding
+ysiw" - add surrounding
+cst<h2> 
+if *x>3 {                 ysW(        if ( x>3 ) {
+ysWf print<cr(Enter)> : "hello" -> print("hello")
+In Visual mode, S) 
+
 ```
 
 ### nvim plugin commands
