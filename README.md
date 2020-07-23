@@ -197,9 +197,6 @@ you can view and edit according to your need.
 
 - Open iTerm's Preferences
 - Select Keys > Hotkey > Create a Dedicated Hotkey Window 
-Add shortcut key for iterm2 hotkey window
-
-- Goto preferences(Command + comma) > Keys > Hotkey > Create a dedicated hotkkey
 - Record Hotkey to set shortcut key (eg Option + Space) and then Select OK
 - Use the shortcut key to open sliding terminal window
 
