@@ -40,6 +40,7 @@ let g:startify_bookmarks = [
             \ {'b': '~/Desktop/jekyll-theme-chirpy/'},
             \ {'d': '~/Desktop/dotfiles-mac'},
             \ {'n': '~/Desktop/notes/wiki/index.md'},
+            \ {'c': '~/Desktop/dotfiles-mac/common_commands.md'},
             \ ]
 
 let g:startify_enable_special = 0
