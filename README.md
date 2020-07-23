@@ -160,13 +160,16 @@ you can view and edit according to your need.
 ### Configure iTerm2
 #### Set shortcut key for terminal (iTerm2)
 
-![Imgur](https://i.imgur.com/k1qid6x.png)
-
-1. Launch iTerm2
-2. Open Preferences by iTerm2->Preferences or Command plus comma(,)
-3. Select Profiles Tab
-4. Select Default > General tab.
-5. Choose a shortcut key
+1. Open Applications > Automator
+2. Select New Document > Quick Action
+3. Select Launch application
+4. Select iterm
+5. Save (Command + S) and give name (eg Launch iterm)
+6. Goto System Preferences > Keboard > Shortcuts > Service
+7. Select the name in step 5 (eg Launch iterm)
+8. Press Add shortcut > (Record by pressing the keys you want as
+   shortcut (eg Command plus .)
+9. Restart
 
 #### Change theme for perfect display with ohmyzsh agnoster theme
 
@@ -175,25 +178,38 @@ you can view and edit according to your need.
 - Download [Solarized](http://ethanschoonover.com/solarized)
 - Unzip it and double click on the colour scheme you want (light or dark)
 - Open iTerm2’s preferences.
-- Go to colours, load presets and select Solarized. Make sure that the minimum contrast slider is set to low
+- Select Profiles > Colours > Color Presets and choose Solarized Dark. Make sure that the minimum contrast slider is set to low
 - Click on text, make sure that “Draw bold text in bright colours” is disabled
 
-#### Add shortcut key for iterm2 hotkey window
+**Change iTerm2 font**
 
-- Goto preferences(Command + comma) > Profile > Keys > Hotkey > Create a dedicated hotkkey
+- Goto `dotfiles-mac/fonts/`
+- Double click and install any of the two fonts
+- Open iTerm2's Preferences
+- Select Profiles > Text > Font
+- Choose FiraCode font that you installed
 
-### Other Softwares
+#### Create a hotkey window for iTerm2 (Sliding terminal)
+
+- Open iTerm's Preferences
+- Select Keys > Hotkey > Create a Dedicated Hotkey Window 
+Add shortcut key for iterm2 hotkey window
+
+- Goto preferences(Command + comma) > Keys > Hotkey > Create a dedicated hotkkey
+- Record Hotkey to set shortcut key (eg Option + Space) and then Select OK
+- Use the shortcut key to open sliding terminal window
+
+### Other Useful Softwares
 
 - [Foxit PDF Reader](https://www.foxitsoftware.com/pdf-reader/)
-- Todoist
-
+- [Todoist](https://todoist.com/downloads/mac)
 - Pycharm Community Edition
-  
+-
   ```console
   $ brew cask install pycharm-ce
   ```
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-  
+
   ```console
   $ wget -P ~/Downloads 'https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh'
   $ bash ~/Downloads/Miniconda3*.sh
@@ -205,7 +221,11 @@ you can view and edit according to your need.
   $ unzip awscli-bundle.zip
   $ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
   ```
-
+- [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
+- [Mounty - to make external disks wtitable](https://crystalidea.com/macs-fan-control/download)
+- [Tiles - Window Management](https://freemacsoft.net/tiles/)
+- [Pock - Touchbar customization](https://pock.dev/)
+- [Utorrent Web for MAC](https://www.utorrent.com/downloads/mac)
 - [Gcloud](https://cloud.google.com/sdk/install#installation_options)
 
 - Latex 
