@@ -193,7 +193,7 @@ you can view and edit according to your need.
 
 #### Create a hotkey window for iTerm2 (Sliding terminal)
 
-![Imgur](https://i.imgur.com/yPnFm20.png)
+![Imgur](https://i.imgur.com/2d4H8dg.gif)
 
 - Open iTerm's Preferences
 - Select Keys > Hotkey > Create a Dedicated Hotkey Window 
