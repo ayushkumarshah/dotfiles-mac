@@ -118,10 +118,12 @@ ZQ - force quit without saving
 ds" - delete "surrounding"
 cs"' - change surrounding
 ysiw" - add surrounding
-cst<h2> 
-if *x>3 {                 ysW(        if ( x>3 ) {
-ysWf print<cr(Enter)> : "hello" -> print("hello")
-In Visual mode, S) 
+
+Example:
+- cst```<h2>``` - change surrounding tag 
+- if *x>3{ &nbsp; &nbsp; ysW( &nbsp; &nbsp; if ( x>3 ) {
+- ysWf print<cr(Enter)> : "hello" -> print("hello")
+- In Visual mode, S) -> add surrounding 
 
 ```
 
