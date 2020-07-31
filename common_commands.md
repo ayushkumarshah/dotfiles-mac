@@ -66,13 +66,17 @@ Ctrl+D (exit)
 w word by word
 W word by word (ignores bracket)
 
+% move to matching parenthesis pair
+
 d starts the delete operation.
 dw will delete a word.
 
 c starts the delete operation.
 cw will delete a word and change to insert mode.
 
-a Insert after cursor
+a Insert to right of cursor
+A insert at end of line
+I insert at beginning of line
 diw, di(, di' interactive deletes ( can be used with other commands as well )
 
 f/F find character
