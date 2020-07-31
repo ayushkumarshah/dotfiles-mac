@@ -27,8 +27,19 @@ $ chsh -s $(which zsh)
 ```console
 $ brew cask install iterm2
 ```
+## 3. Edit the .gitconfig file
 
-## 3. Logout and login, then run setup.sh
+Open and modify the `.gitconfig` file
+
+```gitconfig
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Your-Github-Name
+	email = Your-Github-EMAIL
+```
+
+## 4. Logout and login, then run setup.sh
 
 Open iTerm2 terminal if you installed, otherwise open default
 terminal. cd into the dotfiles-mac directory. Then run
@@ -228,7 +239,7 @@ you can view and edit according to your need.
 - [Pock - Touchbar customization](https://pock.dev/)
 - [Utorrent Web for MAC](https://www.utorrent.com/downloads/mac)
 - [Gcloud](https://cloud.google.com/sdk/install#installation_options)
-
+- [Photoshop 2020 v21.1.3](https://www.1337x.to/torrent/4494003/Adobe-Photoshop-2020-v21-1-3-Patch-macOS-haxNode/)
 - Latex 
   - Full - Recommended (Tex maker included in mac)
   
