@@ -1,20 +1,30 @@
 # Common commands
 
+- [General Shell Commands](#general-shell-commands)
+- [SSH Commands](#ssh-commands)
+- [tmux commands](#tmux-commands)
+- [Vim Commands](#vim-commands)
+- [Git Commands](#git-commands)
+- [i3wm commands](#i3wm-commands)
+
 ## General shell commands
 
-```console
-pwd   # get current path
-cd -  # go back to previous location
-cat filename  # show the contents of the file filename
-du -sh .
-du -sh *
-du -sh . | tail -1
-stat chmod
-htop
-tree
-```
+|||
+|--|--|
+|pwd| get current path
+|pwd &#124; pbcopy | copy current path to clipboard
+|cd -  | go back to previous location|
+|cat filename| show the contents of the file filename|
+|df -h                    |Show disk information - sapce used and free           |
+|du -sh .                 |Show total size occupied by current directory           |
+|du -sh *                 |Show size of each file or folder in current directory           |
+|du -sh * &#124; tail -1  |Show total size occupied by the last file in the current directory|
+|stat filename            |Display file status         |
+|htop or ytop             |Process info and CPU Usage  |
+|man command-name         |Information about the command|
+|tree [-aldf][-L level][-P pattern][-I pattern][-o filename] |display directory's contents in a  tree <br> a - all files <br> l - symbolic links <br> d - directories only <br> L - limit number of levels of directory <br> I - files not matching pattern <br> P - files matching pattern <br> o - output to filename|
 
-## SSH
+## SSH Commands
 
 ### SSH Tunelling
 
@@ -30,6 +40,34 @@ ssh -NL 8888:localhost:8888 username@ip
 ssh-keygen -t rsa
 ```
 
+**Save ssh host info**
+Modify this file: `~/.ssh/config`
+
+```config
+Host targaryen
+    HostName 192.168.1.10
+    User daenerys
+    Port 7654
+    IdentityFile ~/.ssh/targaryen.key
+
+Host tyrell
+    HostName 192.168.10.20
+
+Host martell
+    HostName 192.168.10.50
+
+Host *ell
+    user oberyn
+
+Host * !martell
+    LogLevel INFO
+
+Host *
+    User root
+    Compression yes
+
+```
+
 **Save ssh password so that no need to re-enter everytime**
 
 ```console
@@ -37,180 +75,248 @@ ssh-keygen -t rsa
 ~/.ssh/config : save host info
 ```
 
-## tmux
+## tmux commands
 
-```console
-tmux
-tmux new -s name
-tmux ls
-tmux attach -t name
-<prefix>=Ctrl+B (default), can be changed to Ctrl+A
-<prefix> % "  (Splitting panes)
-Ctrl+D (exit)
-<prefix> D (get out )
-<prefix> c: Create a new window (appears in status bar)
-<prefix> 0: Switch to window 0
-<prefix> 1: Switch to window 1
-<prefix> x: Kill current window
-<prefix> d: Detach tmux (exit back to normal terminal)
-<prefix> z, the active pane is toggled between zoomed and unzoomed
+|||
+|--|--|
+|tmux                                                                      |
+|tmux new -s name                                                          |
+|tmux ls                                                                   |
+|tmux a -t name                                                       |
+|`<prefix>` = `<c-B>` (default), can be changed to `<c-A>`                       |
+|```<prefix>``` [%"] | (Splitting panes)                                           |
+|[c-D] | (exit)                                                             |
+|```<prefix>``` D | (get out )                                                     |
+|```<prefix>``` c| Create a new window (appears in status bar)                   |
+|```<prefix>``` 0| Switch to window 0                                            |
+|```<prefix>``` 1| Switch to window 1                                            |
+|```<prefix>``` x| Kill current window                                           |
+|```<prefix>``` d| Detach tmux (exit back to normal terminal)                    |
+|```<prefix>``` z| the active pane is toggled between zoomed and unzoomed        |
+|```<prefix>``` `<c-S>` | save current state                                        |
+|```<prefix>``` `<c-R>` | reload saved state                                        |
 
-<prefix> <c-S>: save current state
-<prefix> <c-R>: reload saved state
 
-```
+## Vim commands
 
-## Vim
+### Syntax:
 
-```console
-w word by word
-W word by word (ignores bracket)
-
-% move to matching parenthesis pair
-
-d starts the delete operation.
-dw will delete a word.
-
-c starts the delete operation.
-cw will delete a word and change to insert mode.
-
-a Insert to right of cursor
-A insert at end of line
-I insert at beginning of line
-diw, di(, di' interactive deletes ( can be used with other commands as well )
-
-f/F find character
-t/T find character and place cursor before character
-
-p paste text after the current line.
-P paste text on the current line.
-
-y yank text into the copy buffer.
-d -> delete
-<C-x> cut
-
-"+p paste from system
-"+y copy into system
-: % y + copy all into system
-
-v highlight one character at a time.
-V highlight one line at a time.
-Ctrl-v highlight by columns.
-
-u -> undo
-Ctrl-r will redo the last undo.
-
-/text search for text
-:%s/text/replacement text/g search through the entire document for text and replace it with replacement text.
-:%s/text/replacement text/gc search through the entire document and confirm before replacing text.
-
-0 moves the cursor to the beginning of the line.
-$ moves the cursor to the end of the line.
-G move to the end of the file.
-gg move to the beginning of the file.
-`. move to the last edit.
-
-:q
-:q!
-:wq
-
-In Normal mode: 
-ZZ - save and quit
-ZQ - force quit without saving
-
-### Surround
-ds" - delete "surrounding"
-cs"' - change surrounding
-ysiw" - add surrounding
-
-Example:
-- cst```<h2>``` - change surrounding tag 
-- if *x>3{ &nbsp; &nbsp; ysW( &nbsp; &nbsp; if ( x>3 ) {
-- ysWf print<cr(Enter)> : "hello" -> print("hello")
-- In Visual mode, S) -> add surrounding 
+Verbs (operations) + Noun (text on which operation is performed)
 
 ```
+[count] [operation] [text object / motion]
+```
 
-### nvim plugin commands
+### 1. VIM Verbs (operations)
 
-```vim
-:bd -> remove buffer
-:CtrlP -> find file
-<C-e> -> Sidebar
-<C-o> -> Toggle between buffers
-space+d -> goto definitions
-space+g -> goto ASSIGNMENTS
+|||
+|--|--|
+|c                                |change                                             |
+|d                                |delete                                            |
+|`<c-x>` (Custom command) |cut                                                   |
+|y| yank text into the copy buffer.                                                    |
+|v| highlight one character at a time.                                                 |
+|V |highlight one line at a time.                                                      |
+|`<c-v>` | highlight by columns.                                                         |
+|p| paste text after the current line.                                                 |
+|P| paste text on the current line.                                                    |
+|>| Shift Right                                                    |
+|>| Shift Left                                                    |
+|=| Indent |
+|gU | make uppercase                                                                  |
+|gu | make lowercase                                                                  |
+|~ | swap case                                                                        |
 
-" Git
-:Git diff
-:Gdiffsplit
-:GBrowse
-:GV
+### 2. VIM Nouns (text)
 
-:vsplit
+#### i. Text Objects 
 
-" coc-python
-gd > Goto Definitions
-gr > Goto References
-<C-o> - Go back
+Must be combined with verbs 
 
-Shift K > doc hint
-:Format > autopep8 formatting
+|||
+|--|--|
+|iw | inner word (non whitespace) (works from anywhere in a word)
+|aw | word with surrounding white space (works from anywhere in a word) <br> aw ~ W. Difference in position. E.g. For dw, cursor must be at beginning, whereas daw works from any position.
+|ib | inner bracket (the contents of an HTML tag)  
+|ab | a bracket 
+|it | inner tag (the contents of an HTML tag)  
+|at | a tag block  
+|i" | inner quotes
+|a" | a quote
+|ip | inner paragraph
+|ap | a paragraph
+|is | inner sentence
+|as | a sentence
 
-<C-w>w -> Switch cursors between sidebar and code
-<C-n><C-n><C-n> -> multiple cursors:
-    c -> change
-    I -> Insert at first
-    A -> Insert at end
+Combination examples:
 
-:FZF
-:Rg > Find word inside file
-:BLines > Find all occurences of word in a giant file
-:Lines > Same as above but search in all buffers
-:History: > HOstory of commands ran in vim
-:Ag > similar to Rg but
-:Buffers > Search through buffers
-> - Tab
-gf > Goto file: open file directly from path written in vim
+|||
+|--|--|
+|gUiw| capitalize a word|
+|ci(| change inner bracket|
+|6dW| delete 6 words|
+|yis| copy inner sentence|
+|di"| delete inner quotes|
 
-" Coc
-:CocInstall coc-python
-:CocUninstall
-:CocList extensions , Tab
-:CocCommand
 
-" Coc Explorer
-o - expand/collapse
+#### ii. Motions
+
+Can be combined with verbs or used independently
+
+|||
+|--|--|
+|[count] w/W | go a (word / word with whitespace) to right |
+|[count] b/B | go a (word / word with whitespace) to left   |
+|[count] e/E | go to the end of (word / word with whitespace) |
+|[count] ]m | go to the beginning of next method |
+|[count] h / j / k / l | left / down / up / right 
+|[count] f/F [char] | go to the next occurence of character   |
+|[count] t/T [char] | go to just before the next occurence of character |
+|% | move to matching parenthesis pair                                                  |
+|[count] +| down to first non blank char of the line.                                     |
+|[count]$| moves the cursor to the end of the line.                                           |
+|0| moves the cursor to the end of the line.                                           |
+|G| move to the end of the file.                                                       |
+|gg| move to the beginning of the file.                                                |
+|'.| move to the last edit                                                            |
+
+Combination examples:
+
+|||
+|--|--|
+|3ce| Change 3 wrods to end |
+|d]m| delete start of next method |
+|ctL| change upto before the next occurence of L |
+|d]m| delete start of next method |
+
+
+### 3. Other important vim commands
+
+|||
+|--|--|
+|i| Insert to left of cursor                                                          |
+|a| Insert to right of cursor                                                          |
+|A| insert at end of line                                                              |
+|I| insert at beginning of line                                                        |
+|u | undo                                                                            |
+|`<c-r>` | will redo the last undo.                                                      |
+|/text| search for text                                                                |
+|:%s/text/replacement text/g| search through the entire document for text and replace it with replacement text.
+|:%s/text/replacement text/gc |search through the entire document and confirm before replacing text.
+|:q  | quit                                                                                 |
+|:q! or ZQ | force quit                                                         |
+|:wq or ZZ | write and quit                                        |
+|:bd | remove buffer
+|`<c-v>` select multiple lines then I| insert at multiple lines     |
+
+### 4. vim-surround commands
+
+|||
+|--|--|
+|ds['"bB[](){}t] |  delete surrounding quotes
+|cs['"bB[](){}t] ['"bB[](){}t]| change surrounding quotes 
+|ysiw['"bB[](){}t]|  add surrounding quotes "
+|v-select, S['"bB[](){}t] | add surrounding 
+
+Examples:
+
+||||
+|--|--|--|
+|`<p>` Hello `</p>` |cst`<h2>` |  `<h2>` Hello `</h2>`
+| if *x>3{ | ysW( | if ( x>3 ) {
+|*"hello"| ysWf print<cr(Enter)>| print("hello")
+
+### 5. nvim plugin commands
+
+|||
+|--|--|
+|``<c-o>`` ``<c-i>`` | Toggle between buffers
+|:Git diff      |
+|:Gdiffsplit    |
+|:GBrowse       |
+|:GV            |
+|:vsplit        |
+
+Coc
+
+|||
+|--|--|
+|:CocInstall coc-python
+|:CocUninstall
+|:CocList extensions , Tab
+|:CocCommand
+|" Coc Explorer
+|o - expand/collapse
+
+coc-python
+
+|||
+|--|--|
+|gd | Goto Definitions
+|gr | Goto References
+|Shift K | doc hint
+|:Format | autopep8 formatting
+|``<C-w>``w | Switch cursors between sidebar and code
+|``<C-n>`` ``<C-n>`` ``<C-n>``<br> c <br> I <br> A | multiple cursors: <br> change <br> Insert at first <br> Insert at end
+
+FZF
+
+|||
+|--|--|
+|:Rg > Find word inside file
+|:BLines | Find all occurences of word in a giant file
+|:Lines | Same as above but search in all buffers
+|:History: | HOstory of commands ran in vim
+|:Ag | similar to Rg but
+|:Buffers | Search through buffers
+|> | Tab
+|gf | Goto file: open file directly from path written in vim
+
 
 Startify
-:SSave
-:SLoad
 
-" I hate escape more than anything else
-inoremap jk <Esc>
-inoremap kj <Esc>
+|||
+|--|--|
+|:SSave
+|:SLoad
 
-" Easy CAPS
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
+|||
+|--|--|
+|" I hate escape more than anything else
+|inoremap jk <Esc>
+|inoremap kj <Esc>
 
-" Alternate way to save
-nnoremap <C-s> :w<CR>
-" Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
-" Use control-c instead of escape
-nnoremap <C-c> <Esc>
 
-" Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+|||
+|--|--|
+|" Easy CAPS
+|inoremap <c-u> <ESC>viwUi
+|nnoremap <c-u> viwU<Esc>
 
-" vim commentary
-nnoremap <space>/ :Commentary<CR>
-vnoremap <space>/ :Commentary<CR>
-```
+
+|||
+|--|--|
+|" Alternate way to save
+|nnoremap <C-s> :w<CR>
+|" Alternate way to quit
+|nnoremap <C-Q> :wq!<CR>
+|" Use control-c instead of escape
+|nnoremap <C-c> <Esc>
+
+
+|||
+|--|--|
+|" Better window navigation
+|nnoremap <C-h> <C-w>h
+|nnoremap <C-j> <C-w>j
+|nnoremap <C-k> <C-w>k
+|nnoremap <C-l> <C-w>l
+
+|||
+|--|--|
+|" vim commentary
+|nnoremap <space>/ :Commentary<CR>
+|vnoremap <space>/ :Commentary<CR>
 
 **Open server in nautilus / file explorer**
 
@@ -218,37 +324,37 @@ vnoremap <space>/ :Commentary<CR>
 File explorer: Other locations > Connect to server > sftp://username@ip/
 ```
 
-## i3 wm
+## i3wm commands
 
 - pavucontrol
 - alsamixer
 
-```console
-mod + r - resize mode , then arrow keys or vim keys
-mod + Shift + e - exit
-mod + d - dmenu
-mod+Shift+c reload
-mod+Shift+r restart
-```
+|||
+|--|--|
+|mod + r - resize mode , then arrow keys or vim keys
+|mod + Shift + e - exit
+|mod + d - dmenu
+|mod+Shift+c reload
+|mod+Shift+r restart
 
 Alt+Shift- Change keyboard language
 
-## Git
+## Git commands
 
-```console
-git commit --amend -> add to previous commits
-git push origin -f branchname -> forced push
-git rebase master -> merge changes of master onto the current branch (first pull from master before rebase)
-git log
-git diff
-git remote -v -> show repo information
-git reset --hard <SOME-COMMIT> eg git reset --hard HEAD@1
-git show
-git config --global user.name
-git config --global user.email
-git reset <file> -> remove file from the current index (the "about to be committed" list) without changing anything else.
-git checkout filename -> Undo local changes to latest commit
-```
+|||
+|--|--|
+|git commit --amend | add to previous commits
+|git push origin -f branchname | forced push
+|git rebase master | merge changes of master onto the current branch (first pull from master before rebase)
+|git log
+|git diff
+|git remote -v | show repo information
+|git reset --hard <SOME-COMMIT> eg git reset --hard HEAD@1
+|git show
+|git config --global user.name
+|git config --global user.email
+|git reset <file> | remove file from the current index (the "about to be committed" list) without changing anything else.
+|git checkout filename | Undo local changes to latest commit
 
 ### Ignore files that have already been committed to the repo
 
@@ -365,8 +471,8 @@ git reset does know five "modes": soft, mixed, hard, merge and keep. I will star
 ### Other git commands
 
 ```console
-git rm -> rm plus git add combined
-git rm --cached -> file removed from the index (staging it for deletion on the next commit), but keep your  copy in the local file system.
+git rm | rm plus git add combined
+git rm --cached | file removed from the index (staging it for deletion on the next commit), but keep your  copy in the local file system.
 ```
 
 ## Brew bundle (Mac)
@@ -512,18 +618,3 @@ brew 'myservice', restart_service: true
 # Only restart when installing or upgrading myservice
 brew 'myservice', restart_service: :changed
 ```
-
-## Note
-
-Homebrew does not support installing specific versions of a library, only the most recent one, so there is no good mechanism for storing installed versions in a `.lock` file.
-
-If your software needs specific versions then perhaps you'll want to look at using [Vagrant](https://vagrantup.com/) to better match your development and production environments.
-
-## Tests
-
-Tests can be run with `bundle install && bundle exec rspec`.
-
-## Copyright
-
-Copyright (c) Homebrew maintainers and Andrew Nesbitt. See [LICENSE](https://github.com/Homebrew/homebrew-bundle/blob/master/LICENSE) for details.
-
