@@ -73,7 +73,7 @@ Host *
 **Save ssh password so that no need to re-enter everytime**
 
 ```console
- ssh-copy-id extract@10.0.2.29
+ ssh-copy-id username@ip
 ~/.ssh/config : save host info
 ```
 
