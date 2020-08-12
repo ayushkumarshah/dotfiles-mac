@@ -6,6 +6,7 @@
 - [Vim Commands](#vim-commands)
 - [Git Commands](#git-commands)
 - [i3wm commands](#i3wm-commands)
+- [Brew bundle](#brew-bundle)
 
 ## General shell commands
 
@@ -23,6 +24,7 @@
 |htop or ytop             |Process info and CPU Usage  |
 |man command-name         |Information about the command|
 |tree [-aldf][-L level][-P pattern][-I pattern][-o filename] |display directory's contents in a  tree <br> a - all files <br> l - symbolic links <br> d - directories only <br> L - limit number of levels of directory <br> I - files not matching pattern <br> P - files matching pattern <br> o - output to filename|
+
 
 ## SSH Commands
 
@@ -75,15 +77,21 @@ Host *
 ~/.ssh/config : save host info
 ```
 
+**Open server in nautilus / file explorer**
+
+```markdown
+File explorer: Other locations > Connect to server > sftp://username@ip/
+```
+
 ## tmux commands
 
 |||
 |--|--|
-|tmux                                                                      |
-|tmux new -s name                                                          |
-|tmux ls                                                                   |
-|tmux a -t name                                                       |
-|`<prefix>` = `<c-B>` (default), can be changed to `<c-A>`                       |
+|tmux                      |                                                |
+|tmux new -s name          |                                                |
+|tmux ls                   |                                                |
+|tmux a -t name            |                                           |
+|`<prefix>` = `<c-B>` (default), can be changed to `<c-A>`  |                     |
 |```<prefix>``` [%"] | (Splitting panes)                                           |
 |[c-D] | (exit)                                                             |
 |```<prefix>``` D | (get out )                                                     |
@@ -178,7 +186,6 @@ Can be combined with verbs or used independently
 |0| moves the cursor to the end of the line.                                           |
 |G| move to the end of the file.                                                       |
 |gg| move to the beginning of the file.                                                |
-|'.| move to the last edit                                                            |
 
 Combination examples:
 
@@ -203,13 +210,65 @@ Combination examples:
 |/text| search for text                                                                |
 |:%s/text/replacement text/g| search through the entire document for text and replace it with replacement text.
 |:%s/text/replacement text/gc |search through the entire document and confirm before replacing text.
+|*|search forward for word under cursor
+|#|search backward for word under cursor
+|:vsplit        |vertical split windows
+|m[a-zA-Z]|sets a custom mark whose location can be accessed using `[mark] and line accessed using '[mark]|
+|'.| move to the last edit                                                            |
+|:marks| show all current marks that are being used                    |
 |:q  | quit                                                                                 |
 |:q! or ZQ | force quit                                                         |
 |:wq or ZZ | write and quit                                        |
 |:bd | remove buffer
+|gd | Goto Definitions
+|gr | Goto References
+|[:vert] :sf filename| find file and open in split mode
 |`<c-v>` select multiple lines then I| insert at multiple lines     |
 
-### 4. vim-surround commands
+
+### 4. Custom (Remapped) vim commands
+
+|||
+|--|--|
+|jk (Custom- ```inoremap jk <Esc>``` ) |``<Esc>``
+|kj (Custom)```inoremap kj <Esc>``` |``<Esc>``
+|nnoremap ``<C-c>| <Esc>``
+|nnoremap ``<C-s>``| :w``<CR>``
+|nnoremap ``<C-Q>``| :wq!``<CR>``
+|Better window navigation
+|nnoremap ``<C-h>``| ``<C-w>h``
+|nnoremap ``<C-j>``| ``<C-w>j``
+|nnoremap ``<C-k>``| ``<C-w>k``
+|nnoremap ``<C-l>``| ``<C-w>l``
+
+### 5. Using Args
+
+Args are list of files initially opened. So, it's a subset of buffers.
+
+|||
+|--|--|
+|:args               |display args files
+|:args **/*.yaml     |add files to args
+|:sall               |open all args files in split mode
+|:vert sall          |open all args files in vertical split mode
+|:windo difft|show differences in all args files
+|c-x, c-l|autocomplete
+|:vim TODO/ ## |search in all args files|
+|:cdo s/TODO/DONE/g |replace in all args files|
+
+### 6. Scrolling and motions 
+
+|||
+|--|--|
+|`<c-u`> , `<c-d`>|Up, down scroll|
+|`<c-b`> , `<c-f`>|Up, down full screen scroll|
+|`<c-y`> , `<c-e`>|Up, down scroll by lines|
+|H / M / L|Navigations to top / middle / bottom|
+|zt|Put current cursor position to top|
+|zz|Put current cursor position to middle|
+|zb|Put current cursor position to bottom|
+
+### 7. vim-surround commands
 
 |||
 |--|--|
@@ -226,44 +285,41 @@ Examples:
 | if *x>3{ | ysW( | if ( x>3 ) {
 |*"hello"| ysWf print<cr(Enter)>| print("hello")
 
-### 5. nvim plugin commands
+### 8. Addtional vim plugin commands
 
+#### Git plugins commands
 |||
 |--|--|
 |``<c-o>`` ``<c-i>`` | Toggle between buffers
-|:Git diff      |
-|:Gdiffsplit    |
-|:GBrowse       |
-|:GV            |
-|:vsplit        |
+|:Git diff      |Show git differences
+|:Gdiffsplit    |Show differences in split mode
+|:GBrowse       |Open the repository in github
+|:GV            |Show git commit history 
 
-Coc
-
-|||
-|--|--|
-|:CocInstall coc-python
-|:CocUninstall
-|:CocList extensions , Tab
-|:CocCommand
-|" Coc Explorer
-|o - expand/collapse
-
-coc-python
+#### Coc commands
 
 |||
 |--|--|
-|gd | Goto Definitions
-|gr | Goto References
+|:CocInstall coc-python| Installing coc tools
+|:CocUninstall| Uninstalling coc tools
+|:CocList extensions (Tab for autocompletion)| Show extensions
+|:CocCommand| execute a COC command
+|o | expand/collapse in Coc explorer
+
+#### coc-python
+
+|||
+|--|--|
 |Shift K | doc hint
 |:Format | autopep8 formatting
 |``<C-w>``w | Switch cursors between sidebar and code
 |``<C-n>`` ``<C-n>`` ``<C-n>``<br> c <br> I <br> A | multiple cursors: <br> change <br> Insert at first <br> Insert at end
 
-FZF
+#### FZF
 
 |||
 |--|--|
-|:Rg > Find word inside file
+|:Rg | Find word inside file
 |:BLines | Find all occurences of word in a giant file
 |:Lines | Same as above but search in all buffers
 |:History: | HOstory of commands ran in vim
@@ -273,71 +329,19 @@ FZF
 |gf | Goto file: open file directly from path written in vim
 
 
-Startify
+#### Startify
 
 |||
 |--|--|
-|:SSave
-|:SLoad
+|:SSave| Save session
+|:SLoad| Load session
+
+#### vim-commentary
 
 |||
 |--|--|
-|" I hate escape more than anything else
-|inoremap jk <Esc>
-|inoremap kj <Esc>
-
-
-|||
-|--|--|
-|" Easy CAPS
-|inoremap <c-u> <ESC>viwUi
-|nnoremap <c-u> viwU<Esc>
-
-
-|||
-|--|--|
-|" Alternate way to save
-|nnoremap <C-s> :w<CR>
-|" Alternate way to quit
-|nnoremap <C-Q> :wq!<CR>
-|" Use control-c instead of escape
-|nnoremap <C-c> <Esc>
-
-
-|||
-|--|--|
-|" Better window navigation
-|nnoremap <C-h> <C-w>h
-|nnoremap <C-j> <C-w>j
-|nnoremap <C-k> <C-w>k
-|nnoremap <C-l> <C-w>l
-
-|||
-|--|--|
-|" vim commentary
-|nnoremap <space>/ :Commentary<CR>
-|vnoremap <space>/ :Commentary<CR>
-
-**Open server in nautilus / file explorer**
-
-```markdown
-File explorer: Other locations > Connect to server > sftp://username@ip/
-```
-
-## i3wm commands
-
-- pavucontrol
-- alsamixer
-
-|||
-|--|--|
-|mod + r - resize mode , then arrow keys or vim keys
-|mod + Shift + e - exit
-|mod + d - dmenu
-|mod+Shift+c reload
-|mod+Shift+r restart
-
-Alt+Shift- Change keyboard language
+|nnoremap ``<space>``/| :Commentary``<CR>``
+|vnoremap ``<space>``/| :Commentary``<CR>``
 
 ## Git commands
 
@@ -468,6 +472,12 @@ git reset does know five "modes": soft, mixed, hard, merge and keep. I will star
 
     > This mode is particularly useful when you have a bunch of changes and want to switch to a different branch without losing these changes - for example when you started to work on the wrong branch.
 
+### Remove sensitive file from github repo history
+```console
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch path_to_file" HEAD
+git push -f origin master
+```
+
 ### Other git commands
 
 ```console
@@ -475,7 +485,22 @@ git rm | rm plus git add combined
 git rm --cached | file removed from the index (staging it for deletion on the next commit), but keep your  copy in the local file system.
 ```
 
-## Brew bundle (Mac)
+## i3wm commands
+
+- pavucontrol
+- alsamixer
+
+|||
+|--|--|
+|mod + r - resize mode , then arrow keys or vim keys
+|mod + Shift + e - exit
+|mod + d - dmenu
+|mod+Shift+c reload
+|mod+Shift+r restart
+
+Alt+Shift- Change keyboard language
+
+## Brew bundle
 
 ### Requirements
 
