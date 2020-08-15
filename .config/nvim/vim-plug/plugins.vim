@@ -110,6 +110,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'moll/vim-bbye'
     " Ranger in vim
     Plug 'francoiscabrol/ranger.vim'
+    " Dependency for ranger in neovim
+    Plug 'rbgrouleff/bclose.vim'
     " Delete buffer using bd
     " Plug 'rbgrouleff/bclose.vim'
     " Plug 'vimwiki/vimwiki'
