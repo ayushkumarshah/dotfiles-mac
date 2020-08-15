@@ -37,7 +37,7 @@ let g:startify_session_persistence = 1
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
-            \ {'b': '~/Desktop/jekyll-theme-chirpy/'},
+            \ {'b': '~/Desktop/Blog_writing/ayushkumarshah.github.io'},
             \ {'d': '~/Desktop/dotfiles-mac'},
             \ {'n': '~/Desktop/notes/wiki/index.md'},
             \ {'c': '~/Desktop/dotfiles-mac/common_commands.md'},
