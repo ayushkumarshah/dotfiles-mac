@@ -8,6 +8,9 @@ let g:which_key_map =  {}
 let g:which_key_sep = '→'
 " set timeoutlen=100
 
+" Coc Search & refactor
+nnoremap <leader>? :CocSearch <C-R>=expand("<cword>")<CR><CR>
+let g:which_key_map['?'] = 'search word'
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
@@ -30,18 +33,19 @@ let g:which_key_map[';'] = [ ':Commands'                  , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
 let g:which_key_map[','] = [ 'Startify'                   , 'start screen' ]
 let g:which_key_map['c'] = [ ':Codi!!'                    , 'virtual repl']
-let g:which_key_map['d'] = [ ':bd'                        , 'delete buffer']
+let g:which_key_map['d'] = [ ':Bdelete'                   , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
+" let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['p'] = [ ':MarkdownPreview'           , 'markdown-preview']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
-let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
+" let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
+let g:which_key_map['u'] = [ ':UndotreeToggle'            , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['W'] = [ 'w'                          , 'write' ]
-let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
+" let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " Group mappings
 
@@ -54,7 +58,9 @@ let g:which_key_map.a = {
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ 's' : [':let @/ = ""'            , 'remove search highlight'],
       \ 't' : [':FloatermToggle'         , 'terminal'],
-      \ 'v' : [':Vista!!'                , 'tag viewer'],
+      \ 'v' : [':Codi'                   , 'virtual repl on'],
+      \ 'V' : [':Codi!'                  , 'virtual repl off'],
+      \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
       \ }
 
 " b is for buffer
@@ -62,13 +68,20 @@ let g:which_key_map.b = {
       \ 'name' : '+buffer' ,
       \ '1' : ['b1'        , 'buffer 1']        ,
       \ '2' : ['b2'        , 'buffer 2']        ,
-      \ 'd' : ['bd'        , 'delete-buffer']   ,
+      \ 'd' : [':Bdelete'        , 'delete-buffer']   ,
       \ 'f' : ['bfirst'    , 'first-buffer']    ,
       \ 'h' : ['Startify'  , 'home-buffer']     ,
       \ 'l' : ['blast'     , 'last-buffer']     ,
       \ 'n' : ['bnext'     , 'next-buffer']     ,
       \ 'p' : ['bprevious' , 'previous-buffer'] ,
       \ '?' : ['Buffers'   , 'fzf-buffer']      ,
+      \ }
+
+" f is for find and replace
+let g:which_key_map.f = {
+      \ 'name' : '+find & replace' ,
+      \ 'b' : [':Farr --source=vimgrep'    , 'buffer'],
+      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
       \ }
 
 " s is for search
@@ -98,6 +111,15 @@ let g:which_key_map.s = {
       \ 'w' : [':Windows'      , 'search windows'],
       \ 'y' : [':Filetypes'    , 'file types'],
       \ 'z' : [':FZF'          , 'FZF'],
+      \ }
+
+let g:which_key_map.S = {
+      \ 'name' : '+Session' ,
+      \ 'c' : [':SClose'          , 'Close Session']  ,
+      \ 'd' : [':SDelete'         , 'Delete Session'] ,
+      \ 'l' : [':SLoad'           , 'Load Session']     ,
+      \ 's' : [':Startify'        , 'Start Page']     ,
+      \ 'S' : [':SSave'           , 'Save Session']   ,
       \ }
 
 " g is for git
@@ -179,6 +201,24 @@ let g:which_key_map.t = {
       \ ';' : [':FloatermToggle'                                , 'toggle'],
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ }
+
+" T is for terminal
+let g:which_key_map.T = {
+      \ 'name' : '+tabline' ,
+      \ 'b' : [':XTabListBuffers'         , 'list buffers'],
+      \ 'd' : [':XTabCloseBuffer'         , 'close buffer'],
+      \ 'D' : [':XTabDeleteTab'           , 'close tab'],
+      \ 'h' : [':XTabHideBuffer'          , 'hide buffer'],
+      \ 'i' : [':XTabInfo'                , 'info'],
+      \ 'l' : [':XTabLock'                , 'lock tab'],
+      \ 'm' : [':XTabMode'                , 'toggle mode'],
+      \ 'n' : [':tabNext'                 , 'next tab'],
+      \ 'N' : [':XTabMoveBufferNext'      , 'buffer->'],
+      \ 't' : [':tabnew'                  , 'new tab'],
+      \ 'p' : [':tabprevious'             , 'prev tab'],
+      \ 'P' : [':XTabMoveBufferPrev'      , '<-buffer'],
+      \ 'x' : [':XTabPinBuffer'           , 'pin buffer'],
       \ }
 
 let g:which_key_map.w = {
