@@ -293,6 +293,12 @@ Examples:
 
 ## 8. Addtional vim plugin commands
 
+To apply latest settings:
+
+```vim
+:source $MYVIMRC
+```
+
 ### Git plugins commands
 
 |||

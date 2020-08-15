@@ -26,5 +26,4 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # export PATH=/usr/bin/python3:$PATH
-
 export HOMEBREW_BUNDLE_FILE=~/.Brewfile

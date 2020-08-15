@@ -107,11 +107,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ntpeters/vim-better-whitespace'
     " Multiple Cursors
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-    " Plug 'moll/vim-bbye'
+    Plug 'moll/vim-bbye'
     " Ranger in vim
     Plug 'francoiscabrol/ranger.vim'
     " Delete buffer using bd
-    Plug 'rbgrouleff/bclose.vim'
+    " Plug 'rbgrouleff/bclose.vim'
     " Plug 'vimwiki/vimwiki'
     Plug 'voldikss/vim-floaterm'
     " Alternative to vimwiki
