@@ -1,4 +1,12 @@
-# Common commands
+---
+layout: post
+title: Common commands 
+date: 2020-08-12 13:00
+categories: [linux, mac]
+summary: A curated list of common commands that makes usage easy
+tags: [linux, mac, vim, tmux, neovim, ssh, i32m, brew, shell]
+author: Ayush Kumar Shah
+---
 
 - [General Shell Commands](#general-shell-commands)
 - [SSH Commands](#ssh-commands)
@@ -8,7 +16,7 @@
 - [i3wm commands](#i3wm-commands)
 - [Brew bundle](#brew-bundle)
 
-## General shell commands
+# General shell commands
 
 |||
 |--|--|
@@ -26,15 +34,15 @@
 |tree [-aldf][-L level][-P pattern][-I pattern][-o filename] |display directory's contents in a  tree <br> a - all files <br> l - symbolic links <br> d - directories only <br> L - limit number of levels of directory <br> I - files not matching pattern <br> P - files matching pattern <br> o - output to filename|
 
 
-## SSH Commands
+# SSH Commands
 
-### SSH Tunelling
+## SSH Tunelling
 
 ```console
-ssh -NL 8888:localhost:8888 username@ip
+ssh -NL 8888:localhost:8888 username@ip-address
 ```
 
-### Other ssh commands
+## Other ssh commands
 
 **Generate ssh key:**
 
@@ -73,7 +81,7 @@ Host *
 **Save ssh password so that no need to re-enter everytime**
 
 ```console
- ssh-copy-id username@ip
+ ssh-copy-id username@ip-address
 ~/.ssh/config : save host info
 ```
 
@@ -83,7 +91,7 @@ Host *
 File explorer: Other locations > Connect to server > sftp://username@ip/
 ```
 
-## tmux commands
+# tmux commands
 
 |||
 |--|--|
@@ -105,9 +113,9 @@ File explorer: Other locations > Connect to server > sftp://username@ip/
 |```<prefix>``` `<c-R>` | reload saved state                                        |
 
 
-## Vim commands
+# Vim commands
 
-### Syntax:
+## Syntax:
 
 Verbs (operations) + Noun (text on which operation is performed)
 
@@ -115,7 +123,7 @@ Verbs (operations) + Noun (text on which operation is performed)
 [count] [operation] [text object / motion]
 ```
 
-### 1. VIM Verbs (operations)
+## 1. VIM Verbs (operations)
 
 |||
 |--|--|
@@ -135,9 +143,9 @@ Verbs (operations) + Noun (text on which operation is performed)
 |gu | make lowercase                                                                  |
 |~ | swap case                                                                        |
 
-### 2. VIM Nouns (text)
+## 2. VIM Nouns (text)
 
-#### i. Text Objects 
+### i. Text Objects 
 
 Must be combined with verbs 
 
@@ -166,8 +174,7 @@ Combination examples:
 |yis| copy inner sentence|
 |di"| delete inner quotes|
 
-
-#### ii. Motions
+### ii. Motions
 
 Can be combined with verbs or used independently
 
@@ -177,15 +184,15 @@ Can be combined with verbs or used independently
 |[count] b/B | go a (word / word with whitespace) to left   |
 |[count] e/E | go to the end of (word / word with whitespace) |
 |[count] ]m | go to the beginning of next method |
-|[count] h / j / k / l | left / down / up / right 
-|[count] f/F [char] | go to the next occurence of character   |
-|[count] t/T [char] | go to just before the next occurence of character |
-|% | move to matching parenthesis pair                                                  |
-|[count] +| down to first non blank char of the line.                                     |
-|[count]$| moves the cursor to the end of the line.                                           |
-|0| moves the cursor to the end of the line.                                           |
-|G| move to the end of the file.                                                       |
-|gg| move to the beginning of the file.                                                |
+|[count] h / j / k / l | left / down / up / right
+|[count] f/F [char] [;,]+ | go to the next occurence of character   |
+|[count] t/T [char] [;,]+ | go to just before the next occurence of character |
+|% | move to matching parenthesis pair    |
+|[count] +| down to first non blank char of the line.  |
+|[count]$| moves the cursor to the end of the line.        |
+|0| moves the cursor to the end of the line.                 |
+|G| move to the end of the file.                                |
+|gg| move to the beginning of the file.                         |
 
 Combination examples:
 
@@ -196,18 +203,17 @@ Combination examples:
 |ctL| change upto before the next occurence of L |
 |d]m| delete start of next method |
 
-
-### 3. Other important vim commands
+## 3. Other important vim commands
 
 |||
 |--|--|
-|i| Insert to left of cursor                                                          |
-|a| Insert to right of cursor                                                          |
-|A| insert at end of line                                                              |
-|I| insert at beginning of line                                                        |
-|u | undo                                                                            |
-|`<c-r>` | will redo the last undo.                                                      |
-|/text| search for text                                                                |
+|i| Insert to left of cursor                |
+|a| Insert to right of cursor                |
+|A| insert at end of line                    |
+|I| insert at beginning of line              |
+|u | undo                                  |
+|`<c-r>` | will redo the last undo.            |
+|/text| search for text                      |
 |:%s/text/replacement text/g| search through the entire document for text and replace it with replacement text.
 |:%s/text/replacement text/gc |search through the entire document and confirm before replacing text.
 |*|search forward for word under cursor
@@ -226,7 +232,7 @@ Combination examples:
 |`<c-v>` select multiple lines then I| insert at multiple lines     |
 
 
-### 4. Custom (Remapped) vim commands
+## 4. Custom (Remapped) vim commands
 
 |||
 |--|--|
@@ -241,7 +247,7 @@ Combination examples:
 |nnoremap ``<C-k>``| ``<C-w>k``
 |nnoremap ``<C-l>``| ``<C-w>l``
 
-### 5. Using Args
+## 5. Using Args
 
 Args are list of files initially opened. So, it's a subset of buffers.
 
@@ -256,7 +262,7 @@ Args are list of files initially opened. So, it's a subset of buffers.
 |:vim TODO/ ## |search in all args files|
 |:cdo s/TODO/DONE/g |replace in all args files|
 
-### 6. Scrolling and motions 
+## 6. Scrolling and motions 
 
 |||
 |--|--|
@@ -268,7 +274,7 @@ Args are list of files initially opened. So, it's a subset of buffers.
 |zz|Put current cursor position to middle|
 |zb|Put current cursor position to bottom|
 
-### 7. vim-surround commands
+## 7. vim-surround commands
 
 |||
 |--|--|
@@ -285,9 +291,10 @@ Examples:
 | if *x>3{ | ysW( | if ( x>3 ) {
 |*"hello"| ysWf print<cr(Enter)>| print("hello")
 
-### 8. Addtional vim plugin commands
+## 8. Addtional vim plugin commands
 
-#### Git plugins commands
+### Git plugins commands
+
 |||
 |--|--|
 |``<c-o>`` ``<c-i>`` | Toggle between buffers
@@ -296,7 +303,7 @@ Examples:
 |:GBrowse       |Open the repository in github
 |:GV            |Show git commit history 
 
-#### Coc commands
+### Coc commands
 
 |||
 |--|--|
@@ -306,7 +313,7 @@ Examples:
 |:CocCommand| execute a COC command
 |o | expand/collapse in Coc explorer
 
-#### coc-python
+### coc-python
 
 |||
 |--|--|
@@ -315,7 +322,7 @@ Examples:
 |``<C-w>``w | Switch cursors between sidebar and code
 |``<C-n>`` ``<C-n>`` ``<C-n>``<br> c <br> I <br> A | multiple cursors: <br> change <br> Insert at first <br> Insert at end
 
-#### FZF
+### FZF
 
 |||
 |--|--|
@@ -329,21 +336,21 @@ Examples:
 |gf | Goto file: open file directly from path written in vim
 
 
-#### Startify
+### Startify
 
 |||
 |--|--|
 |:SSave| Save session
 |:SLoad| Load session
 
-#### vim-commentary
+### vim-commentary
 
 |||
 |--|--|
 |nnoremap ``<space>``/| :Commentary``<CR>``
 |vnoremap ``<space>``/| :Commentary``<CR>``
 
-## Git commands
+# Git commands
 
 |||
 |--|--|
@@ -360,7 +367,7 @@ Examples:
 |git reset <file> | remove file from the current index (the "about to be committed" list) without changing anything else.
 |git checkout filename | Undo local changes to latest commit
 
-### Ignore files that have already been committed to the repo
+## Ignore files that have already been committed to the repo
 
 ```console
 $ git rm -r --cached .
@@ -368,13 +375,13 @@ $ git add .
 $ git commit -m "Clean up ignored files"
 ```
 
-### Hard delete unpublished commits
+## Hard delete unpublished commits
 
 ```console
 git reset --hard commit_id (reset to the particular commit. It will destroy any local modifications.)
 ```
 
-### Alternatively, if there's work to keep
+## Alternatively, if there's work to keep
 
 ```console
 git stash
@@ -384,7 +391,7 @@ git stash pop
 
 > This saves the modifications, then reapplies that patch after resetting. You could get merge conflicts, if you've modified things which were changed since the commit you reset to.
 
-### Undo published commits with new commits
+## Undo published commits with new commits
 
 > This will create three separate revert commits:
 
@@ -424,7 +431,7 @@ git checkout 0d1d7fc32 .
 git commit
 ```
 
-### Git reset
+## Git reset
 
 git reset does know five "modes": soft, mixed, hard, merge and keep. I will start with the first three, since these are the modes you'll usually encounter. After that you'll find a nice little a bonus, so stay tuned.
 
@@ -472,20 +479,20 @@ git reset does know five "modes": soft, mixed, hard, merge and keep. I will star
 
     > This mode is particularly useful when you have a bunch of changes and want to switch to a different branch without losing these changes - for example when you started to work on the wrong branch.
 
-### Remove sensitive file from github repo history
+## Remove sensitive file from github repo history
 ```console
 git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch path_to_file" HEAD
 git push -f origin master
 ```
 
-### Other git commands
+## Other git commands
 
 ```console
 git rm | rm plus git add combined
 git rm --cached | file removed from the index (staging it for deletion on the next commit), but keep your  copy in the local file system.
 ```
 
-## i3wm commands
+# i3wm commands
 
 - pavucontrol
 - alsamixer
@@ -500,21 +507,7 @@ git rm --cached | file removed from the index (staging it for deletion on the ne
 
 Alt+Shift- Change keyboard language
 
-## Brew bundle
-
-### Requirements
-
-[Homebrew](https://github.com/Homebrew/brew) (on macOS or [Linux](https://docs.brew.sh/Homebrew-on-Linux)) for installing dependencies.
-
-[Homebrew Cask](https://github.com/Homebrew/homebrew-cask) is optional and used for installing Mac applications.
-
-[mas-cli](https://github.com/mas-cli/mas) is optional and used for installing Mac App Store applications.
-
-[whalebrew](https://github.com/whalebrew/whalebrew) is optional and used for installing Whalebrew images.
-
-## Installation
-
-`brew bundle` is automatically installed when first run.
+# Brew bundle
 
 ## Usage
 
@@ -547,7 +540,7 @@ whalebrew "whalebrew/wget"
 `cask` and `mas` entries are automatically skipped on Linux.
 Other entries can be run only on (or not on) Linux with `if OS.mac?` or `if OS.linux?`.
 
-### Install
+## Install
 
 You can then easily install all dependencies with:
 
@@ -575,7 +568,7 @@ You can opt-out of this behaviour by setting the `HOMEBREW_BUNDLE_NO_LOCK` envir
 
 You may wish to check this file into the same version control system as your `Brewfile` (or ensure your version control system ignores it if you'd prefer to rely on debugging information from a local machine).
 
-### Dump
+## Dump
 
 You can create a `Brewfile` from all the existing Homebrew packages you have installed with:
 
@@ -587,7 +580,7 @@ The `--force` option will allow an existing `Brewfile` to be overwritten as well
 The `--describe` option will output a description comment above each line.
 The `--no-restart` option will prevent `restart_service` from being added to `brew` lines with running services.
 
-### Cleanup
+## Cleanup
 
 You can also use a `Brewfile` to list the only packages that should be installed, removing any package not present or dependent. This workflow is useful for maintainers or testers who regularly install lots of formulae. To uninstall all Homebrew formulae not listed in the `Brewfile`:
 
@@ -597,7 +590,7 @@ brew bundle cleanup
 
 Unless the `--force` option is passed, formulae that would be uninstalled will be listed rather than actually be uninstalled.
 
-### Check
+## Check
 
 You can check there's anything to install/upgrade in the `Brewfile` by running:
 
@@ -609,7 +602,7 @@ This provides a successful exit code if everything is up-to-date, making it usef
 
 For a list of dependencies that are missing, pass `--verbose`. This will also check _all_ dependencies by not exiting on the first missing dependency category.
 
-### List
+## List
 
 Outputs a list of all of the entries in the Brewfile.
 
@@ -621,7 +614,7 @@ Pass one of `--casks`, `--taps`, `--mas`, `--whalebrew` or `--brews` to limit ou
 
 Note that the _type_ of the package is **not** included in this output.
 
-### Exec
+## Exec
 
 Runs an external command within Homebrew's superenv build environment.
 
@@ -631,7 +624,7 @@ brew bundle exec -- bundle install
 
 This sanitized build environment ignores unrequested dependencies, which makes sure that things you didn't specify in your `Brewfile` won't get picked up by commands like `bundle install`, `npm install`, etc. It will also add compiler flags which will help find keg-only dependencies like `openssl`, `icu4c`, etc.
 
-### Restarting services
+## Restarting services
 
 You can choose whether `brew bundle` restarts a service every time it's run, or
 only when the formula is installed or upgraded in your `Brewfile`:
@@ -643,3 +636,4 @@ brew 'myservice', restart_service: true
 # Only restart when installing or upgrading myservice
 brew 'myservice', restart_service: :changed
 ```
+
