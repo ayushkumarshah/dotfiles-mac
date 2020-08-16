@@ -40,7 +40,7 @@ let g:startify_bookmarks = [
             \ {'b': '~/Desktop/Blog_writing/ayushkumarshah.github.io'},
             \ {'d': '~/Desktop/dotfiles-mac'},
             \ {'n': '~/Desktop/notes/wiki/index.md'},
-            \ {'c': '~/Desktop/dotfiles-mac/common_commands.md'},
+            \ {'c': '~/Desktop/Blog_writing/ayushkumarshah.github.io/_posts/2020-08-12-common-commands.md'},
             \ ]
 
 let g:startify_enable_special = 0
