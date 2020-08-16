@@ -115,7 +115,9 @@ File explorer: Other locations > Connect to server > sftp://username@ip/
 
 # Vim commands
 
-## Syntax:
+## I. Pure Vim
+
+### Syntax:
 
 Verbs (operations) + Noun (text on which operation is performed)
 
@@ -123,14 +125,17 @@ Verbs (operations) + Noun (text on which operation is performed)
 [count] [operation] [text object / motion]
 ```
 
-## 1. VIM Verbs (operations)
+### 1. VIM Verbs (operations)
 
 |||
 |--|--|
 |c                                |change                                             |
 |d                                |delete                                            |
-|`<c-x>` (Custom command) |cut                                                   |
+|D                                |delete  everything from where your cursor is to the end of the line|
+|dd                                |delete a line                             |
+|x                                |delete a sigle character                                            |
 |y| yank text into the copy buffer.                                                    |
+|yy| yank line into the copy buffer.                                                    |
 |v| highlight one character at a time.                                                 |
 |V |highlight one line at a time.                                                      |
 |`<c-v>` | highlight by columns.                                                         |
@@ -143,9 +148,9 @@ Verbs (operations) + Noun (text on which operation is performed)
 |gu | make lowercase                                                                  |
 |~ | swap case                                                                        |
 
-## 2. VIM Nouns (text)
+### 2. VIM Nouns (text)
 
-### i. Text Objects 
+#### i. Text Objects 
 
 Must be combined with verbs 
 
@@ -174,7 +179,7 @@ Combination examples:
 |yis| copy inner sentence|
 |di"| delete inner quotes|
 
-### ii. Motions
+#### ii. Motions
 
 Can be combined with verbs or used independently
 
@@ -203,7 +208,7 @@ Combination examples:
 |ctL| change upto before the next occurence of L |
 |d]m| delete start of next method |
 
-## 3. Other important vim commands
+### 3. Other important vim commands
 
 |||
 |--|--|
@@ -230,9 +235,10 @@ Combination examples:
 |gr | Goto References
 |[:vert] :sf filename| find file and open in split mode
 |`<c-v>` select multiple lines then I| insert at multiple lines     |
+|q `<char`> commands q <br> @`<char`>| record command macros <br> apply recorded commands|
 
 
-## 4. Custom (Remapped) vim commands
+### 4. Custom (Remapped) vim commands
 
 |||
 |--|--|
@@ -247,7 +253,7 @@ Combination examples:
 |nnoremap ``<C-k>``| ``<C-w>k``
 |nnoremap ``<C-l>``| ``<C-w>l``
 
-## 5. Using Args
+### 5. Using Args
 
 Args are list of files initially opened. So, it's a subset of buffers.
 
@@ -262,7 +268,7 @@ Args are list of files initially opened. So, it's a subset of buffers.
 |:vim TODO/ ## |search in all args files|
 |:cdo s/TODO/DONE/g |replace in all args files|
 
-## 6. Scrolling and motions 
+### 6. Scrolling and motions 
 
 |||
 |--|--|
@@ -274,7 +280,21 @@ Args are list of files initially opened. So, it's a subset of buffers.
 |zz|Put current cursor position to middle|
 |zb|Put current cursor position to bottom|
 
-## 7. vim-surround commands
+
+## II. Vim Plugins commands
+
+To apply latest settings:
+
+```vim
+:source $MYVIMRC
+```
+
+### Bulk-rename in ranger
+
+- Select files to rename using visual selection
+- :bulkrename
+- 
+### 1. vim-surround commands
 
 |||
 |--|--|
@@ -291,15 +311,7 @@ Examples:
 | if *x>3{ | ysW( | if ( x>3 ) {
 |*"hello"| ysWf print<cr(Enter)>| print("hello")
 
-## 8. Addtional vim plugin commands
-
-To apply latest settings:
-
-```vim
-:source $MYVIMRC
-```
-
-### Git plugins commands
+### 2. Git plugins commands
 
 |||
 |--|--|
@@ -309,7 +321,7 @@ To apply latest settings:
 |:GBrowse       |Open the repository in github
 |:GV            |Show git commit history 
 
-### Coc commands
+### 3. Coc commands
 
 |||
 |--|--|
@@ -319,7 +331,7 @@ To apply latest settings:
 |:CocCommand| execute a COC command
 |o | expand/collapse in Coc explorer
 
-### coc-python
+### 4. coc-python
 
 |||
 |--|--|
@@ -328,7 +340,7 @@ To apply latest settings:
 |``<C-w>``w | Switch cursors between sidebar and code
 |``<C-n>`` ``<C-n>`` ``<C-n>``<br> c <br> I <br> A | multiple cursors: <br> change <br> Insert at first <br> Insert at end
 
-### FZF
+### 5. FZF
 
 |||
 |--|--|
@@ -342,14 +354,14 @@ To apply latest settings:
 |gf | Goto file: open file directly from path written in vim
 
 
-### Startify
+### 6. Startify
 
 |||
 |--|--|
 |:SSave| Save session
 |:SLoad| Load session
 
-### vim-commentary
+### 7. vim-commentary
 
 |||
 |--|--|
