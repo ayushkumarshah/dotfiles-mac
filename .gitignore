@@ -6,3 +6,4 @@
 .config/coc/*
 .config/configstore
 .config/nvim/session
+2020-*.md

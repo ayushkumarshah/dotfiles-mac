@@ -125,6 +125,14 @@ Verbs (operations) + Noun (text on which operation is performed)
 [count] [operation] [text object / motion]
 ```
 
+### Run bash commands in vim
+
+```vim
+:[.]!command
+```
+
+`. (dot)` - outputs the command into the current buffer
+
 ### 1. VIM Verbs (operations)
 
 |||
