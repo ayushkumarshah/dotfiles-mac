@@ -2,7 +2,7 @@ let g:mkdp_path_to_chrome = "/Applications/Google\\ Chrome.app/Contents/MacOS/Go
 " Path to the chrome or the command to open chrome (or other modern browsers).
 " If set, g:mkdp_browserfunc would be ignored.
 
-let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
+" let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
 " Callback Vim function to open browser, the only parameter is the url to open.
 
 let g:mkdp_auto_start = 0
