@@ -16,7 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Have the file system follow you around
     Plug 'airblade/vim-rooter'
     " auto set indent settings
-    Plug 'tpope/vim-sleuth'
+    " Plug 'tpope/vim-sleuth'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
@@ -119,6 +119,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Alternative to vimwiki
     " Plug 'fcpg/vim-waikiki'
     " Plug 'zxqfl/tabnine-vim'
+    " Bullets for markdown
+    Plug 'dkarter/bullets.vim'
     call plug#end()
 
 
