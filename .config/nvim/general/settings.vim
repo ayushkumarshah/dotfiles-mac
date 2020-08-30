@@ -45,3 +45,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" Add auto break after 80 characters
+set nowrap
+set textwidth=80
+set wrapmargin=0
+set formatoptions+=t
+set linebreak
