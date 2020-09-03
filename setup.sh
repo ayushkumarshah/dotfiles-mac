@@ -41,6 +41,10 @@ process_option() {
     source scripts/homebrew.sh
     break
     ;;
+  'neovim')
+    source scripts/neovim.sh
+    break
+    ;;
   'ohmyzsh')
     source scripts/ohmyzsh.sh
     break
@@ -74,6 +78,7 @@ while true; do
     echo "   config:  Default settings for mac"
     echo "     link:  Link dotfiles to home"
     echo " homebrew:  Install homebrew installer"
+    echo "   neovim:  Install neovim requirements"
     echo "  ohmyzsh:  Install ohmyzsh"
     echo "      ssh:  Create & copy SSH key"
     echo ""
