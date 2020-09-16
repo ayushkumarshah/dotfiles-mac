@@ -27,3 +27,11 @@ fi
 
 # export PATH=/usr/bin/python3:$PATH
 export HOMEBREW_BUNDLE_FILE=~/.Brewfile
+
+# JAVA env variable
+export JAVA_HOME="$(/usr/libexec/java_home)"
+
+# Maven environment variable
+export M2_HOME=/usr/local/apache-maven/apache-maven-3.6.3
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
