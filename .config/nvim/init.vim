@@ -39,6 +39,7 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+source $HOME/.config/nvim/plug-config/sneak.vim
 
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
