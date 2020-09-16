@@ -34,6 +34,9 @@ author: Ayush Kumar Shah
 |htop or ytop             |Process info and CPU Usage  |
 |man command-name         |Information about the command|
 |tree [-aldf][-L level][-P pattern][-I pattern][-o filename] |display directory's contents in a  tree <br> a - all files <br> l - symbolic links <br> d - directories only <br> L - limit number of levels of directory <br> I - files not matching pattern <br> P - files matching pattern <br> o - output to filename|
+|`<C-T>`|fzf: fuzzy finding files or directories|
+|`<C-R>`|fzf: fuzzy finding commands in history|
+|`<Esc-C>`|fzf: fuzzy finding files or directories from current path|
 
 
 # SSH Commands
