@@ -1,1 +1,1 @@
-let g:python3_host_prog = expand("/usr/local/bin/python3")
+let g:python3_host_prog = expand("/Users/$USER/miniconda3/bin/python3")
