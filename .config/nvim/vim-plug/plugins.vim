@@ -123,6 +123,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dkarter/bullets.vim'
     " Sneak for 2 character search and navigate text
     Plug 'justinmk/vim-sneak'
+    " Plugin for latex
+    Plug 'lervag/vimtex'
     call plug#end()
 
 
