@@ -48,6 +48,12 @@ let g:which_key_map['W'] = [ 'w'                          , 'write' ]
 " let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " Group mappings
+let g:which_key_map.p = {
+      \ 'name' : '+preview' ,
+      \ 'm' : [ ':MarkdownPreview'           , 'markdown-preview'],
+      \ 'l' : [ ':VimtexCompile'             , 'latex: compile and view pdf'],
+      \ 's' : [ ':VimtexClean'               , 'latex: stop and clean compilation'],
+      \ }
 
 " a is for actions
 let g:which_key_map.a = {
