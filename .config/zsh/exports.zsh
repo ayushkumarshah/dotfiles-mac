@@ -35,3 +35,6 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 export M2_HOME=/usr/local/apache-maven/apache-maven-3.6.3
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
+
+# Nvidia visual profiler for mac
+export PATH="/Users/$USER/nvvp/bin:$PATH"
