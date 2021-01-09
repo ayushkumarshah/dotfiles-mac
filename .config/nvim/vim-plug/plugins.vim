@@ -120,7 +120,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'fcpg/vim-waikiki'
     " Plug 'zxqfl/tabnine-vim'
     " Bullets for markdown
-    Plug 'dkarter/bullets.vim'
+    " Plug 'dkarter/bullets.vim'
     " Sneak for 2 character search and navigate text
     Plug 'justinmk/vim-sneak'
     " Plugin for latex
