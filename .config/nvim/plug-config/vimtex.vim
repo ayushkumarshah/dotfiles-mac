@@ -4,6 +4,9 @@ let g:vimtex_fold_manual = 1
 let g:vimtex_latexmk_continuous = 1
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_view_method = 'skim'
+let g:vimtex_view_skim_activate = 1
+let g:vimtex_view_skim_reading_bar = 1
+" let g:vimtex_view_method = 'zathura'
 " let g:Tex_DefaultTargetFormat="pdf"
 " let g:Tex_CompileRule_pdf='xelatex --output-directory=temp -interaction=nonstopmode $*'
 let g:vimtex_compiler_latexmk = {
