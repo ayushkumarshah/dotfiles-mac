@@ -3,5 +3,6 @@
     "editor_theme": "Solarized Dark",
     "pdf_previewer": "none",
     "posix_terminal_shell": "zsh",
-    "document_author": "Ayush Kumar Shah"
+    "document_author": "Ayush Kumar Shah",
+    "initial_working_directory": "~/Desktop/RIT_PHD/course_materials/ISTE782_VisualAnalytics"
 }
