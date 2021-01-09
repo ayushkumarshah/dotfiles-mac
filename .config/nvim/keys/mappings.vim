@@ -70,3 +70,5 @@ inoremap <expr> <c-k> ("\<C-p>")
 
 " Compile function for pandoc and python
 map <leader>c :w! \| !compile <c-r>%<CR><CR>
+" Open output pdf or html
+map <leader>o :!opout <c-r>%<CR><CR>
