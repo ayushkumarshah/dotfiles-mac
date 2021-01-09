@@ -25,6 +25,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# My scripts
+export PATH="/Users/$USER/scripts:$PATH"
+
 # export PATH=/usr/bin/python3:$PATH
 export HOMEBREW_BUNDLE_FILE=~/.Brewfile
 
