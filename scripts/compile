@@ -1,7 +1,7 @@
 #!/bin/sh
 # General handler for compiling files
 
-file=$(pwd -P)/$1
+file=$(readlink_v2 "$1")
 base=$(echo "$file" | sed 's/\..*//')
 
 handlebang() {
