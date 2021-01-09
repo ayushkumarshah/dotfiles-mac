@@ -124,6 +124,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Sneak for 2 character search and navigate text
     Plug 'justinmk/vim-sneak'
     " Plugin for latex
+    " Highlight csv / tsv columns in sifferent colours.
+    " Plug 'mechatroner/rainbow_csv'
+    " Plgin for latex
     Plug 'lervag/vimtex'
     call plug#end()
 
