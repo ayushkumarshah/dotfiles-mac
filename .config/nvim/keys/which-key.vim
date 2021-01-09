@@ -52,6 +52,7 @@ let g:which_key_map.p = {
       \ 'name' : '+preview' ,
       \ 'm' : [ ':MarkdownPreview'           , 'markdown-preview'],
       \ 'l' : [ ':VimtexCompile'             , 'latex: compile and view pdf'],
+      \ 'v' : [ ':VimtexView'                , 'latex: Forward search: vim/tex to pdf'],
       \ 's' : [ ':VimtexClean'               , 'latex: stop and clean compilation'],
       \ }
 
