@@ -1,0 +1,3 @@
+alias D="cd ~/Downloads && ls -a"
+alias d="cd ~/Documents && ls -a"
+alias n="cd ~/Desktop/notes/wiki && ls -a"
