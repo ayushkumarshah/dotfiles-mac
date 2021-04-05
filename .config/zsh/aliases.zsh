@@ -3,3 +3,5 @@ alias gcloudusesql_int="./cloud_sql_proxy -instances=ssftp-220720:us-east1:ss-db
 alias gcloudssh="gcloud beta compute --project "ssftp-220720" ssh --zone "us-east4-c" "ss-ml-alpha""
 alias python="python3"
 alias vim="nvim"
+alias omp4j="java -jar /Users/$USER/omp4j-1.2.jar"
+alias o="open -a Finder ."
