@@ -16,6 +16,7 @@ handlebang() {
 
 case "$1" in
     *.md) pandoc --filter pandoc-crossref "$file" -o "$base".pdf;;
+    # *.md) pandoc "$file" -o "$base".pdf;;
     *.py) python "$file" ;;
     *.perl) perl "$file" ;;
     *) handlebang ;;
