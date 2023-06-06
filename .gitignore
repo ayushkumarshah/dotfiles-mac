@@ -8,3 +8,4 @@
 .config/nvim/session
 .config/htop
 2020-*.md
+.tmux/plugins
