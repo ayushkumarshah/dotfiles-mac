@@ -1,0 +1,24 @@
+pane	0	1	:cv	0	:Z	1	:/Users/ayushkumarshah/Desktop/KUCE/Important\ documents/Ayush Important Documents/CV	1	nvim	:nvim CV_current
+pane	0	1	:cv	0	:Z	2	:/Users/ayushkumarshah/Desktop/KUCE/Important\ documents/Ayush Important Documents/CV	0	zsh	:
+pane	0	2	:website	0	:	1	:/Users/ayushkumarshah/Desktop/Website/Portfolio_sites/ayushkumarshah.github.io	1	zsh	:
+pane	0	2	:website	0	:	2	:/Users/ayushkumarshah/Desktop/Website/Portfolio_sites/ayushkumarshah.github.io	0	zsh	:
+pane	0	3	:paper	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Publications	1	nvim	:nvim
+pane	0	3	:paper	0	:	2	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Publications/MyPapers/CROHME2023	0	zsh	:
+pane	0	4	:exp-design	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Experiment_Designs	1	nvim	:nvim Math_parser_exp_design.tex
+pane	0	5	:amazon	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Publications/MyPapers/IEEEICASSP-2023	1	zsh	:
+pane	0	6	:ssh	0	:	1	:/Users/ayushkumarshah	1	zsh	:
+pane	0	7	:qdgga data	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/MathSeer/qdgga/qdgga-parser/data/crohme2023/WebData_CROHME23	0	zsh	:
+pane	0	7	:qdgga data	0	:	2	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/MathSeer/qdgga/qdgga-parser/outputs/run	1	zsh	:
+pane	0	7	:qdgga data	0	:	3	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/MathSeer/qdgga/qdgga-parser	0	zsh	:
+pane	0	8	:proposal	0	:-	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/course_materials/Proposal/phd-proposal-dissertation-template	1	nvim	:nvim Sample_Thesis_main.tex
+pane	0	9	:chem	1	:*	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research	1	nvim	:nvim .
+window	0	1	0	:Z	9847,222x64,0,0{110x64,0,0,1,111x64,111,0,2}
+window	0	2	0	:	a0ba,222x64,0,0{111x64,0,0,3,110x64,112,0,4}
+window	0	3	0	:	a0bd,222x64,0,0{111x64,0,0,5,110x64,112,0,6}
+window	0	4	0	:	c024,222x64,0,0,7
+window	0	5	0	:	c025,222x64,0,0,8
+window	0	6	0	:	c026,222x64,0,0,9
+window	0	7	0	:	0b38,222x64,0,0{111x64,0,0,10,110x64,112,0[110x32,112,0,11,110x31,112,33,12]}
+window	0	8	0	:-	6042,222x64,0,0,13
+window	0	9	1	:*	6044,222x64,0,0,15
+state	0	
