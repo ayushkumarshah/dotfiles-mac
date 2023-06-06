@@ -32,12 +32,12 @@ export PATH="/Users/$USER/scripts:$PATH"
 export HOMEBREW_BUNDLE_FILE=~/.Brewfile
 
 # JAVA env variable
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Maven environment variable
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.6.3
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
+# export M2_HOME=/usr/local/apache-maven/apache-maven-3.6.3
+# export M2=$M2_HOME/bin
+# export PATH=$M2:$PATH
 
 # Nvidia visual profiler for mac
-export PATH="/Users/$USER/nvvp/bin:$PATH"
+# export PATH="/Users/$USER/nvvp/bin:$PATH"
