@@ -18,9 +18,13 @@ link_dotfile() {
 link_dotfile .zshrc
 link_dotfile .bash_profile
 link_dotfile .gitconfig
-link_dotfile .tmux.conf
 link_dotfile .vimrc
-link_dotfile .Brewfile
+link_dotfile .tmux.conf
+link_dotfile Brewfile
 link_dotfile com.googlecode.iterm2.plist
-ln -svf $(pwd)/.config/ ~
-ln -svf $(pwd)/scripts/ ~
+rm -v ~/.config
+ln -svf $(pwd)/.config ~/
+ln -svf $(pwd)/scripts/ ~/
+rm -v ~/.tmux
+ln -svf $(pwd)/.tmux/ ~/
+cp -r $(pwd)/fonts/* ~/fonts/
