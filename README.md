@@ -12,10 +12,18 @@ xcode-select -—install
 ```
 
 ## (Optional) Install 
+
+```console
+brew install --cask logi-options-plus tiles monitorcontrol google-chrome
+```
+
+OR
+
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) 
 - [Chrome](https://www.google.com/chrome/?brand=JJTC&gclid=CjwKCAjwyeujBhA5EiwA5WD7_YuJCRg4UcdrSvefm_55RgH14pCMB6DpEVtm6HkCv-xVTkipjN0m-xoCz0MQAvD_BwE&gclsrc=aw.ds)
 - [Tiles](https://freemacsoft.net/tiles/)
 - [Monitor Control](https://github.com/MonitorControl/MonitorControl/releases)
+
 
 ## 2. Clone this repo
 
