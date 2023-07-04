@@ -94,8 +94,18 @@ source ~/.zshrc
 
 ## 6. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
+### M2 Pro
+```console
+wget -P ~/Downloads 'https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh'
+```
+
+### Intel Mac
 ```console
 wget -P ~/Downloads 'https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh'
+```
+
+### Install
+```console
 bash ~/Downloads/Miniconda3*.sh
 ```
 
