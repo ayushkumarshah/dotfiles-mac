@@ -7,12 +7,14 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | b
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # install pynvim and jedi
+source ~/miniconda3/etc/profile.d/conda.sh
 conda activate base
 pip install pynvim==0.4.2 jedi==0.17.2
 
-brew install fzf ranger ripgrep node
 sh .config/nvim/scripts/install_coc_extensions.sh
+brew install fzf ranger ripgrep node
 
 $(brew --prefix)/opt/fzf/install
-# pip install ueberzug
+pip install ueberzug
 
+npm install -g neovim
