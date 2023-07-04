@@ -41,3 +41,6 @@ export HOMEBREW_BUNDLE_FILE=~/.Brewfile
 
 # Nvidia visual profiler for mac
 # export PATH="/Users/$USER/nvvp/bin:$PATH"
+
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
