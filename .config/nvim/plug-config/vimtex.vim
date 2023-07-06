@@ -1,7 +1,8 @@
 let g:tex_flavor  = 'latex'
 let g:tex_conceal = ''
 let g:vimtex_fold_manual = 1
-let g:vimtex_latexmk_continuous = 1
+let g:vimtex_compiler_latexmk_continuous = 1
+" let g:vimtex_latexmk_background = 1
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_view_method = 'skim'
 let g:vimtex_view_skim_activate = 1
@@ -9,8 +10,12 @@ let g:vimtex_view_skim_reading_bar = 1
 " let g:vimtex_view_method = 'zathura'
 " let g:Tex_DefaultTargetFormat="pdf"
 " let g:Tex_CompileRule_pdf='xelatex --output-directory=temp -interaction=nonstopmode $*'
+
+let g:vimtex_view_general_options
+	\ = '-reuse-instance -forward-search @line @pdf @tex'
+" let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 let g:vimtex_compiler_latexmk = {
-    \ 'build_dir' : 'temp',
+    \ 'aux_dir' : 'latexbuild',
     \}
 " let g:Tex_ViewRule_pdf='cd temp'
 " let g:vimtex_view_general_viewer
