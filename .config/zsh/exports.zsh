@@ -44,3 +44,11 @@ export HOMEBREW_BUNDLE_FILE=~/.Brewfile
 
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
+
+# export GEM_PATH="$HOME/.gem/ruby/2.6.0/bin"
+# export PATH="$GEM_PATH:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH=/Library/TeX/texbin:$PATH
+
