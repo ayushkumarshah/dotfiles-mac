@@ -14,3 +14,6 @@ export NVM_DIR="/Users/$USER/.nvm"
 
 # set -o vi
 source ~/.config/.shortcuts
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
