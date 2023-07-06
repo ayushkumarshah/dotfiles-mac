@@ -14,6 +14,9 @@ pip install pynvim==0.4.2 jedi==0.17.2
 sh .config/nvim/scripts/install_coc_extensions.sh
 brew install fzf ranger ripgrep node
 
+# Ranger icons
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+
 $(brew --prefix)/opt/fzf/install
 pip install ueberzug
 
