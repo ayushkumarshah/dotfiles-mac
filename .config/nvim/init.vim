@@ -19,7 +19,6 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
-source $HOME/.config/nvim/plug-config/coc.vim
 " source $HOME/.config/nvim/plug-config/goyo.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
@@ -38,8 +37,17 @@ source $HOME/.config/nvim/plug-config/markdown-preview.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
-luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 source $HOME/.config/nvim/plug-config/sneak.vim
+source $HOME/.config/nvim/plug-config/ulti-snips.vim
+
+
+" luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+
+" source $HOME/.config/nvim/plug-config/lsp-config.vim
+" luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
+" luafile $HOME/.config/nvim/lua/lsp/compe-config.lua    You, 05/07/23 18:09 • Uncommitted changes
+" luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
+
 source $HOME/.config/nvim/plug-config/vimtex.vim
 
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim

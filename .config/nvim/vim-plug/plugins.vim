@@ -28,8 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Add color for paranthesis
     Plug 'luochen1990/rainbow'
-  " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
     " Cool icons for explorer
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
@@ -68,7 +66,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Zen mode
     " Plug 'junegunn/goyo.vim'
     " Snippets
+    Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
+
     " Plug 'mattn/emmet-vim'
     " Interactive code
     Plug 'metakirby5/codi.vim'
@@ -126,6 +126,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plugin for latex
     " Highlight csv / tsv columns in sifferent colours.
     " Plug 'mechatroner/rainbow_csv'
+
+    " Native LSP
+    " Plug 'neovim/nvim-lspconfig'
+    " Plug 'hrsh7th/nvim-compe'
+    " Plug 'kabouzeid/nvim-lspinstall' 
+
+    " Vim Snippets
+    " Plug 'hrsh7th/vim-vsnip'
+    " Plug 'hrsh7th/vim-vsnip-integ'
+
     " Plgin for latex
     Plug 'lervag/vimtex'
     call plug#end()
