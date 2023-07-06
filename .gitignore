@@ -9,3 +9,5 @@
 .config/htop
 2020-*.md
 .tmux/plugins
+.config/ranger/plugins
+node_modules
