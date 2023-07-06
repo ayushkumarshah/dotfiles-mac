@@ -1,0 +1,17 @@
+pane	0	1	:cv	0	:Z	1	:/Users/ayushkumarshah/Desktop/KUCE/Important\ documents/Ayush Important Documents/CV	1	nvim	:nvim CV_current
+pane	0	1	:cv	0	:Z	2	:/Users/ayushkumarshah/Desktop/KUCE/Important\ documents/Ayush Important Documents/CV	0	zsh	:
+pane	0	2	:website	0	:	1	:/Users/ayushkumarshah/Desktop/Website/Portfolio_sites/ayushkumarshah.github.io	1	zsh	:
+pane	0	2	:website	0	:	2	:/Users/ayushkumarshah/Desktop/Website/Portfolio_sites/ayushkumarshah.github.io	0	zsh	:
+pane	0	3	:paper	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Publications	1	nvim	:nvim
+pane	0	3	:paper	0	:	2	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Publications/MyPapers/CROHME2023	0	zsh	:
+pane	0	4	:cv	0	:	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/Experiment_Designs	1	nvim	:nvim Math_parser_exp_design.tex
+pane	0	7	:qdgga data	1	:*	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/MathSeer/qdgga/qdgga-parser/outputs/run	0	zsh	:
+pane	0	7	:qdgga data	1	:*	2	:/Users/ayushkumarshah/Desktop/RIT_PHD/RIT_Research/MathSeer/qdgga/qdgga-parser	1	zsh	:
+pane	0	8	:thesis	0	:-	1	:/Users/ayushkumarshah/Desktop/RIT_PHD/course_materials/Proposal/phd-proposal-dissertation-template	1	nvim	:nvim Sample_Thesis_main.tex
+window	0	1	0	:Z	46c7,490x99,0,0{244x99,0,0,1,245x99,245,0,2}
+window	0	2	0	:	4f3a,490x99,0,0{245x99,0,0,3,244x99,246,0,4}
+window	0	3	0	:	4f3d,490x99,0,0{245x99,0,0,5,244x99,246,0,6}
+window	0	4	0	:	db24,490x99,0,0,7
+window	0	7	1	:*	0c14,490x99,0,0[490x51,0,0,11,490x47,0,52,12]
+window	0	8	0	:-	6dc2,490x99,0,0,13
+state	0	
