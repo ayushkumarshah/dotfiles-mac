@@ -95,7 +95,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Swap windows
     " Plug 'wesQ3/vim-windowswap'
     " Markdown preview in browser
-    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
     Plug 'iamcco/mathjax-support-for-mkdp'
     " Easily Create Gists
     " Plug 'mattn/vim-gist'
@@ -138,6 +141,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plgin for latex
     Plug 'lervag/vimtex'
+
+    "Copilot
+    Plug 'github/copilot.vim'
     call plug#end()
 
 

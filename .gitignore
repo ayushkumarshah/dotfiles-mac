@@ -11,3 +11,4 @@
 .tmux/plugins
 .config/ranger/plugins
 node_modules
+.tmux/resurrect/*.txt

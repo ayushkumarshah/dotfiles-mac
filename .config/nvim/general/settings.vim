@@ -32,7 +32,6 @@ set shortmess+=c                        " Don't pass messages to |ins-completion
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
 set updatetime=300                      " Faster completion
 set timeoutlen=100                      " By default timeoutlen is 1000 ms
-set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
 set guifont=Fira\ Code\ Nerd\ Font
 set cursorline
@@ -40,16 +39,17 @@ set cursorline
 " set mmp=1300
 " set autochdir                           " Your working directory will always be the same as your working directory
 " set foldcolumn=2                        " Folding abilities
+" Add auto break after 80 characters
+
+set nowrap
+set textwidth=80
+set wrapmargin=0
+set formatoptions+=t
+set linebreak
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
-
-" Add auto break after 80 characters
-set nowrap
-set textwidth=80
-set wrapmargin=0
-set formatoptions+=t
-set linebreak
+set clipboard+=unnamedplus               " Copy paste between vim and everything else

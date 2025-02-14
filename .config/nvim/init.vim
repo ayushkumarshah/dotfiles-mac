@@ -39,7 +39,7 @@ source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/ulti-snips.vim
-
+source $HOME/.config/nvim/plug-config/copilot.vim
 
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 

@@ -52,3 +52,5 @@ eval "$(rbenv init -)"
 
 export PATH=/Library/TeX/texbin:$PATH
 
+export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
+
