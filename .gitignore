@@ -12,3 +12,4 @@
 .config/ranger/plugins
 node_modules
 .tmux/resurrect/*.txt
+.config/github-copilot/apps.json
